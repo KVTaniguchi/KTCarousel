@@ -9,34 +9,20 @@
 Pod::Spec.new do |s|
   s.name             = 'KTCarousel'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KTCarousel.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A side scrolling, zoomable carousel.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This is a framework for displaying UIImages in a side scrolling collection view with a custom UIViewController transition between zoomed-in and zoomed-out view controllers.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/KTCarousel'
+  s.homepage         = 'https://github.com/kvtaniguchi/KTCarousel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Kevin Taniguchi' => 'ktaniguchi@urbn.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/KTCarousel.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Kevin Taniguchi' => 'kvtaniguchi@gmail.com.com' }
+  s.source           = { :git => 'https://github.com/kvtaniguchi/KTCarousel.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'KTCarousel/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'KTCarousel' => ['KTCarousel/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -1,0 +1,6 @@
+framework module KTCarousel {
+  umbrella header "KTCarousel-umbrella.h"
+
+  export *
+  module * { export * }
+}

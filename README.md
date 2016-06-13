@@ -22,7 +22,7 @@ pod "KTCarousel"
 
 ## Author
 
-Kevin Taniguchi, ktaniguchi@urbn.com
+Kevin Taniguchi, kv.taniguchi@gmail.com
 
 ## License
 

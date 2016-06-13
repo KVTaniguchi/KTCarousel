@@ -15,6 +15,7 @@
 		E8A9CA54806073BA19F1CA6240695357 /* Pods-KTCarousel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9AEE0185E87342F008D4925438A2BB /* Pods-KTCarousel_Example-dummy.m */; };
 		EC7E5AE8CA9474D2483A74FC93290841 /* Pods-KTCarousel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B496C5D1FE80C140194ADE40EF29D63 /* Pods-KTCarousel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0908B6F33BE7F24AEDA6F842F164ED7 /* KTCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 906263E4C8E317215ABFC02CADD769E0 /* KTCarousel-dummy.m */; };
+		F63F37FB1D0ECE0B0028C2A3 /* KTPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F37FA1D0ECE0B0028C2A3 /* KTPresentationController.swift */; };
 		F887869A19BE2CC57F3F3ED3A520EC7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		EAA010F8622870DE32DDC0A3F636BD33 /* Pods_KTCarousel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTCarousel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7A0F485206A9AE39D9EC57EFAB0F34 /* Pods-KTCarousel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTCarousel_Tests.modulemap"; sourceTree = "<group>"; };
 		F0077CA5E5F593823AFED35807BB8AA3 /* Pods_KTCarousel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTCarousel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63F37FA1D0ECE0B0028C2A3 /* KTPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTPresentationController.swift; sourceTree = "<group>"; };
 		F6BD3E05714849DD01DB73EED45B9EFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC9AEE0185E87342F008D4925438A2BB /* Pods-KTCarousel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTCarousel_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +217,7 @@
 		F3F24EC22B2A2275FEE3DE3BF8E7BC21 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F63F37FA1D0ECE0B0028C2A3 /* KTPresentationController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63F37FB1D0ECE0B0028C2A3 /* KTPresentationController.swift in Sources */,
 				F0908B6F33BE7F24AEDA6F842F164ED7 /* KTCarousel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DFA67C36A560E1E7489D45FFC75B39A /* KTCarousel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -470,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DFA67C36A560E1E7489D45FFC75B39A /* KTCarousel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;

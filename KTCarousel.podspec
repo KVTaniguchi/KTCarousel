@@ -18,7 +18,7 @@ This is a framework for displaying UIImages in a side scrolling collection view 
   s.homepage         = 'https://github.com/kvtaniguchi/KTCarousel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Kevin Taniguchi' => 'kvtaniguchi@gmail.com.com' }
+  s.author           = { 'Kevin Taniguchi' => 'kvtaniguchi@gmail.com' }
   s.source           = { :git => 'https://github.com/kvtaniguchi/KTCarousel.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'

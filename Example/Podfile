@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KTCarousel_Example' do
+  pod 'KTCarousel', :path => '../'
+
+  target 'KTCarousel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -27,3 +27,4 @@ Kevin Taniguchi, ktaniguchi@urbn.com
 ## License
 
 KTCarousel is available under the MIT license. See the LICENSE file for more info.
+# KTCarousel

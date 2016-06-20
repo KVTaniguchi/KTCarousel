@@ -9,7 +9,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-![Demo](https://cloud.githubusercontent.com/assets/4974425/16181029/a024e2c8-3662-11e6-9766-3b776891f2d0.gif)
+
 
 ## Requirements
 

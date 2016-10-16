@@ -19,27 +19,27 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
     /*
      Collection views nested inside the cells of a tableView are a fairly common jawn, so we demonstrate one here.
      */
-    let tableView = UITableView(frame: CGRectZero, style: .Grouped)
+    let tableView = UITableView(frame: CGRect.zero, style: .grouped)
     
-    private var selectedCellForTransition: KTCarouselZoomableCell?
-    private var selectedCollectionViewForTransition: UICollectionView?
+    fileprivate var selectedCellForTransition: KTCarouselZoomableCell?
+    fileprivate var selectedCollectionViewForTransition: UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "URBNSwifty Carousel"
         
-        navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.barTintColor = UIColor.white
         
         definesPresentationContext = true
         tableView.rowHeight = 250
-        tableView.estimatedRowHeight = UIScreen.mainScreen().bounds.height/3
-        tableView.registerClass(SampleCell.self, forCellReuseIdentifier: "tbvCell")
+        tableView.estimatedRowHeight = UIScreen.main.bounds.height/3
+        tableView.register(SampleCell.self, forCellReuseIdentifier: "tbvCell")
         tableView.delegate = self
         tableView.dataSource = self
         
         let lbl = UILabel()
-        lbl.textAlignment = .Center
+        lbl.textAlignment = .center
         lbl.text = "Touch a cell to see the transition animation"
         lbl.sizeToFit()
         tableView.tableHeaderView = lbl
@@ -47,19 +47,19 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tableView)
         
-        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[tbv]|", options: [], metrics: nil, views: ["tbv": tableView]))
-        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[tbv]|", options: [], metrics: nil, views: ["tbv": tableView]))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|[tbv]|", options: [], metrics: nil, views: ["tbv": tableView]))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:|[tbv]|", options: [], metrics: nil, views: ["tbv": tableView]))
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCellWithIdentifier("tbvCell", forIndexPath: indexPath) as? SampleCell else { return SampleCell() }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tbvCell", for: indexPath) as? SampleCell else { return SampleCell() }
         
         cell.cellSelectedCallback = {[weak self] selectedCell in
             guard let weakSelf = self else { return }
             weakSelf.selectedCollectionViewForTransition = cell.sourceCV
             weakSelf.selectedCellForTransition = selectedCell
             
-            switch indexPath.section {
+            switch (indexPath as NSIndexPath).section {
             case 1:
                 weakSelf.presentCustomDestinationViewController()
             default:
@@ -70,9 +70,9 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerLabel = UILabel()
-        headerLabel.textAlignment = .Center
+        headerLabel.textAlignment = .center
         switch section {
         case 0:
             headerLabel.text = "Zoomable Carousel Cell"
@@ -85,15 +85,15 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return headerLabel
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
@@ -117,12 +117,12 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
         /**
          * In order to use URBNSwiftCarousel, the modalPresentationStyle must be set to .Custom
          */
-        destinationViewController.modalPresentationStyle = .Custom
+        destinationViewController.modalPresentationStyle = .custom
         
-        presentViewController(destinationViewController, animated: true , completion: nil)
+        present(destinationViewController, animated: true , completion: nil)
         
         destinationViewController.dismissCallback = { [weak self] in
-            self?.dismissViewControllerAnimated(true, completion: nil)
+            self?.dismiss(animated: true, completion: nil)
         }
     }
     
@@ -130,11 +130,11 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let customDestinationViewController = CustomDestinationViewController()
         transitionController.presentationController?.maskingNavBarColor = navigationController?.navigationBar.barTintColor
         customDestinationViewController.transitioningDelegate = transitionController
-        customDestinationViewController.modalPresentationStyle = .Custom
-        presentViewController(customDestinationViewController, animated: true, completion: nil)
+        customDestinationViewController.modalPresentationStyle = .custom
+        present(customDestinationViewController, animated: true, completion: nil)
         
         customDestinationViewController.dismissCallback = { [weak self] in
-            self?.dismissViewControllerAnimated(true, completion: nil)
+            self?.dismiss(animated: true, completion: nil)
         }
     }
     
@@ -154,9 +154,9 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
      *
      * Calculate and return the frame you want the animating imageView to return to.
      */
-    func fromImageFrameForGalleryTransitionWithContainerView(containerView: UIView) -> CGRect {
-        guard let imgFrame = selectedCellForTransition?.imageView.KT_imageFrame() else { return CGRectZero }
-        return containerView.convertRect(imgFrame, fromView: selectedCellForTransition)
+    func fromImageFrameForGalleryTransitionWithContainerView(_ containerView: UIView) -> CGRect {
+        guard let imgFrame = selectedCellForTransition?.imageView.KT_imageFrame() else { return CGRect.zero }
+        return containerView.convert(imgFrame, from: selectedCellForTransition)
     }
     
     /**
@@ -166,15 +166,15 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
      *
      * Calculate and return the frame you want the animating imageView to zoom out to.
      */
-    func toImageFrameForGalleryTransitionWithContainerView(containerView: UIView, sourceImageFrame: CGRect) -> CGRect {
-        guard let frameToReturnTo = selectedCellForTransition?.imageView.frame, selectedCell = selectedCellForTransition else { return CGRectZero }
+    func toImageFrameForGalleryTransitionWithContainerView(_ containerView: UIView, sourceImageFrame: CGRect) -> CGRect {
+        guard let frameToReturnTo = selectedCellForTransition?.imageView.frame, let selectedCell = selectedCellForTransition else { return CGRect.zero }
         let size = UIImageView.KT_aspectFitSizeForImageSize(sourceImageFrame.size, rect: frameToReturnTo)
         let toImageWidth = size.width
         let toImageHeight = size.height
-        let convertedRect = containerView.convertRect(selectedCell.frame, fromView: selectedCollectionViewForTransition)
-        let originX = CGRectGetMidX(convertedRect) - size.width/2
-        let originY = CGRectGetMidY(convertedRect) - size.height/2
-        return CGRectMake(originX, originY, toImageWidth, toImageHeight)
+        let convertedRect = containerView.convert(selectedCell.frame, from: selectedCollectionViewForTransition)
+        let originX = convertedRect.midX - size.width/2
+        let originY = convertedRect.midY - size.height/2
+        return CGRect(x: originX, y: originY, width: toImageWidth, height: toImageHeight)
     }
     
     // MARK URBNSynchronizingDelegate Delegate Methods
@@ -183,16 +183,16 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
      * Here we tell the UIPresentationController that is managing the animation transitions what index path was the origin of the transition.
      * This path is passed to the *destination collection view so it can scroll to the corresponding cell.
      */
-    func sourceIndexPath() -> NSIndexPath? {
-        guard let cv = selectedCollectionViewForTransition, cell = selectedCellForTransition else { return nil }
-        return cv.indexPathForCell(cell)
+    func sourceIndexPath() -> IndexPath? {
+        guard let cv = selectedCollectionViewForTransition, let cell = selectedCellForTransition else { return nil }
+        return cv.indexPath(for: cell)
     }
     
     func toCollectionView() -> UICollectionView? {
         return selectedCollectionViewForTransition
     }
     
-    func updateSourceSelectedCell(cell: KTCarouselZoomableCell) {
+    func updateSourceSelectedCell(_ cell: KTCarouselZoomableCell) {
         selectedCellForTransition = cell
     }
 }

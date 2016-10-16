@@ -18,23 +18,23 @@
  */
 
 
-public class KTCarouselTransitionController: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
-    private weak var context: UIViewControllerContextTransitioning?
-    private var transitionView = UIImageView()
-    private var originalSelectedCellFrame = CGRectZero
-    private var springCompletionSpeed: CGFloat = 0.7
-    private var sourceViewController: UIViewController?
-    public var presentationController: KTPresentationController?
-    private var isDismissing = false
+open class KTCarouselTransitionController: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
+    fileprivate weak var context: UIViewControllerContextTransitioning?
+    fileprivate var transitionView = UIImageView()
+    fileprivate var originalSelectedCellFrame = CGRect.zero
+    fileprivate var springCompletionSpeed: CGFloat = 0.7
+    fileprivate var sourceViewController: UIViewController?
+    open var presentationController: KTPresentationController?
+    fileprivate var isDismissing = false
     
     // MARK: UIViewControllerAnimatedTransitioning Delegate Methods - Non-Interactive
-    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    open func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5
     }
     
-    public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    open func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
-        guard let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey), toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
+        guard let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from), let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
             else {
                 assertionFailure("Warning - transition context couldn't find view controllers..")
                 return
@@ -42,40 +42,40 @@ public class KTCarouselTransitionController: NSObject, UIViewControllerAnimatedT
         
         let fromView = fromVC.view
         let toView = toVC.view
-        toView.alpha = 0.0
+        toView?.alpha = 0.0
         
-        guard let topToVC = trueContextViewControllerFromContext(transitionContext, key: UITransitionContextToViewControllerKey) as? KTCarouselTransitioning else {
+        guard let topToVC = trueContextViewControllerFromContext(transitionContext, key: UITransitionContextViewControllerKey.to.rawValue) as? KTCarouselTransitioning else {
             assertionFailure("Warning - couldn't find the true destination view controller.")
             return }
         
-        let duration = transitionDuration(transitionContext)
+        let duration = transitionDuration(using: transitionContext)
         
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: springCompletionSpeed, initialSpringVelocity: 0, options: [], animations: {
-            fromView.alpha = 0
-            toView.alpha = self.isDismissing ? 1.0 : 0.0
+        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: springCompletionSpeed, initialSpringVelocity: 0, options: [], animations: {
+            fromView?.alpha = 0
+            toView?.alpha = self.isDismissing ? 1.0 : 0.0
             if let vc = topToVC as? KTCarouselTransitioningImageView {
                 vc.configureAnimatingTransitionImageView(self.transitionView)
             }
             
         }) { (finished) in
-            toView.alpha = 1.0
-            transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
+            toView?.alpha = 1.0
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
     }
     
     // MARK: UIViewControllerTransitioningDelegate methods
-    public func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
-        presentationController = KTPresentationController(presentedViewController: presented, presentingViewController: source)
+    open func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        presentationController = KTPresentationController(presentedViewController: presented, presenting: source)
         return presentationController
     }
     
-    public func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    open func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         sourceViewController = source
         isDismissing = false
         return self
     }
     
-    public func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    open func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isDismissing = true
         return self
     }
@@ -83,8 +83,8 @@ public class KTCarouselTransitionController: NSObject, UIViewControllerAnimatedT
     // MARK: Convenience
     /** This method finds the true view controller for a given context's key - sometimes iOS will pick the rootview controller or navigation controller of a presenting view controller. Override if necessary if you find you are having trouble accessing the correct view controllers as source or destination.
      */
-    public func trueContextViewControllerFromContext(transitionContext: UIViewControllerContextTransitioning, key: String) -> UIViewController? {
-        guard var vc = transitionContext.viewControllerForKey(key) else {
+    open func trueContextViewControllerFromContext(_ transitionContext: UIViewControllerContextTransitioning, key: String) -> UIViewController? {
+        guard var vc = transitionContext.viewController(forKey: UITransitionContextViewControllerKey(rawValue: key)) else {
             assertionFailure("Warning - passed in a bad key.")
             return nil
         }

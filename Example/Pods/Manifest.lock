@@ -1,5 +1,5 @@
 PODS:
-  - KTCarousel (0.1.0)
+  - KTCarousel (1.0)
 
 DEPENDENCIES:
   - KTCarousel (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  KTCarousel: 5f81fff099a3359a41d95a5b35fec4a0e5a77e0e
+  KTCarousel: 039723ce2207c1252f0e40e2f35ec61c399699a4
 
 PODFILE CHECKSUM: 8c55777afb60e547a8c864f024ec9853d22197ed
 

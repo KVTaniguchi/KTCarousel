@@ -19,9 +19,9 @@ import Foundation
 }
 
 @objc public protocol KTSynchronizingDelegate {
-    optional func updateSourceSelectedCell(cell: KTCarouselZoomableCell)
+    @objc optional func updateSourceSelectedCell(_ cell: KTCarouselZoomableCell)
     
-    func sourceIndexPath() -> NSIndexPath?
+    func sourceIndexPath() -> IndexPath?
     func toCollectionView() -> UICollectionView?
 }
 
@@ -35,9 +35,9 @@ import Foundation
      */
     func imageForGalleryTransition() -> UIImage?
     
-    func fromImageFrameForGalleryTransitionWithContainerView(containerView: UIView) -> CGRect
+    func fromImageFrameForGalleryTransitionWithContainerView(_ containerView: UIView) -> CGRect
     
-    func toImageFrameForGalleryTransitionWithContainerView(containerView: UIView, sourceImageFrame: CGRect) -> CGRect
+    func toImageFrameForGalleryTransitionWithContainerView(_ containerView: UIView, sourceImageFrame: CGRect) -> CGRect
 }
 
 /*
@@ -45,10 +45,10 @@ import Foundation
  */
 
 @objc public protocol KTCarouselTransitioningImageView {
-    func willBeginGalleryTransitionWithImageView(imageView: UIImageView, isToVC: Bool)
+    func willBeginGalleryTransitionWithImageView(_ imageView: UIImageView, isToVC: Bool)
     
-    func didEndGalleryTransitionWithImageView(imageView: UIImageView, isToVC: Bool)
+    func didEndGalleryTransitionWithImageView(_ imageView: UIImageView, isToVC: Bool)
     
-    func configureAnimatingTransitionImageView(imageView: UIImageView)
+    func configureAnimatingTransitionImageView(_ imageView: UIImageView)
 }
 

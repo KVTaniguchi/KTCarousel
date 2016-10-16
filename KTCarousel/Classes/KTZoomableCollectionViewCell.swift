@@ -13,14 +13,14 @@ import UIKit
  This subclass of UICollectionViewCell has a zoomable UIImageView on top of a scrollView.
  
  */
-public class KTCarouselZoomableCell: UICollectionViewCell, UIScrollViewDelegate {
-    public let scrollView = UIScrollView()
-    public let imageView = UIImageView()
+open class KTCarouselZoomableCell: UICollectionViewCell, UIScrollViewDelegate {
+    open let scrollView = UIScrollView()
+    open let imageView = UIImageView()
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
-        scrollView.userInteractionEnabled = false
+        scrollView.isUserInteractionEnabled = false
         scrollView.maximumZoomScale = 2.0
         scrollView.minimumZoomScale = 1.0
         scrollView.zoomScale = 1.0
@@ -34,7 +34,7 @@ public class KTCarouselZoomableCell: UICollectionViewCell, UIScrollViewDelegate 
         
         contentView.addSubview(scrollView)
         
-        imageView.contentMode = .ScaleAspectFit
+        imageView.contentMode = .scaleAspectFit
         scrollView.addSubview(imageView)
     }
     
@@ -46,14 +46,14 @@ public class KTCarouselZoomableCell: UICollectionViewCell, UIScrollViewDelegate 
 
 extension KTCarouselZoomableCell {
     // MARK: UIScrollView Delegate
-    public func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    @objc(viewForZoomingInScrollView:) public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
     
-    public func scrollViewDidEndZooming(scrollView: UIScrollView, withView view: UIView?, atScale scale: CGFloat) {
+    @objc(scrollViewDidEndZooming:withView:atScale:) public func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
         guard let imgView = view else { return }
-        UIView.animateWithDuration(0.2) {
-            imgView.center = CGPointMake(scrollView.bounds.size.width / 2 * scale, scrollView.bounds.size.height/2 * scale)
-        }
+        UIView.animate(withDuration: 0.2, animations: {
+            imgView.center = CGPoint(x: scrollView.bounds.size.width / 2 * scale, y: scrollView.bounds.size.height/2 * scale)
+        }) 
     }
 }

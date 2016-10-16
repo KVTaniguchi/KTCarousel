@@ -12,39 +12,39 @@ import KTCarousel
 class SampleCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     let sourceCV: UICollectionView
     let data = UIImage.testingImages()
-    var cellSelectedCallback: (KTCarouselZoomableCell -> Void)?
+    var cellSelectedCallback: ((KTCarouselZoomableCell) -> Void)?
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         let layout = KTHorizontalPagedFlowLayout()
         layout.minimumLineSpacing = 1.0
         layout.minimumInteritemSpacing = 1.0
-        layout.scrollDirection = .Horizontal
-        layout.itemSize = CGSizeMake(150, 249)
-        sourceCV = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 150, height: 249)
+        sourceCV = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         sourceCV.translatesAutoresizingMaskIntoConstraints = false
         sourceCV.delegate = self
         sourceCV.dataSource = self
-        sourceCV.registerClass(KTCarouselZoomableCell.self, forCellWithReuseIdentifier: "URBNCarouselZoomableCell")
+        sourceCV.register(KTCarouselZoomableCell.self, forCellWithReuseIdentifier: "URBNCarouselZoomableCell")
         contentView.addSubview(sourceCV)
-        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[cv]|", options: [], metrics: nil, views: ["cv": sourceCV]))
-        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[cv]|", options: [], metrics: nil, views: ["cv": sourceCV]))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|[cv]|", options: [], metrics: nil, views: ["cv": sourceCV]))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:|[cv]|", options: [], metrics: nil, views: ["cv": sourceCV]))
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCellWithReuseIdentifier("URBNCarouselZoomableCell", forIndexPath: indexPath) as? KTCarouselZoomableCell else { return KTCarouselZoomableCell() }
-        cell.imageView.image = UIImage.testingImages()[indexPath.item]
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "URBNCarouselZoomableCell", for: indexPath) as? KTCarouselZoomableCell else { return KTCarouselZoomableCell() }
+        cell.imageView.image = UIImage.testingImages()[(indexPath as NSIndexPath).item]
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        guard let cell = collectionView.cellForItemAtIndexPath(indexPath) as? KTCarouselZoomableCell else { return }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? KTCarouselZoomableCell else { return }
         cellSelectedCallback?(cell)
     }
     
@@ -60,23 +60,23 @@ class NonZoomingCustomLayoutCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        let views = ["imageView": imageView, "customLabel": customLabel]
+        let views = ["imageView": imageView, "customLabel": customLabel] as [String : Any]
         
-        for view in views.values {
-            view.translatesAutoresizingMaskIntoConstraints = false
-            contentView.addSubview(view)
-        }
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        customLabel.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(imageView)
+        contentView.addSubview(customLabel)
         
-        imageView.contentMode = .ScaleToFill
-        customLabel.textAlignment = .Center
-        customLabel.textColor = UIColor.whiteColor()
+        imageView.contentMode = .scaleToFill
+        customLabel.textAlignment = .center
+        customLabel.textColor = UIColor.white
         let metrics = ["imgSide": imgSide]
-        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[imageView(410)]-30-[customLabel]|", options: [.AlignAllCenterX], metrics: metrics, views: views))
-        imageView.widthAnchor.constraintEqualToConstant(imgSide).active = true
-        imageView.centerXAnchor.constraintEqualToAnchor(contentView.centerXAnchor).active = true
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:|[imageView(410)]-30-[customLabel]|", options: [.alignAllCenterX], metrics: metrics, views: views))
+        imageView.widthAnchor.constraint(equalToConstant: imgSide).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
     }
     
-    func configure(customText: String, customImage: UIImage) {
+    func configure(_ customText: String, customImage: UIImage) {
         customLabel.text = customText
         imageView.image = customImage
     }

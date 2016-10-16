@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KTCarousel'
-  s.version          = '0.1.0'
+  s.version          = '1.0'
   s.summary          = 'A side scrolling, zoomable carousel.'
 
   s.description      = <<-DESC
@@ -21,7 +21,7 @@ This is a framework for displaying UIImages in a side scrolling collection view 
   s.author           = { 'Kevin Taniguchi' => 'kvtaniguchi@gmail.com' }
   s.source           = { :git => 'https://github.com/kvtaniguchi/KTCarousel.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'KTCarousel/Classes/**/*'
 

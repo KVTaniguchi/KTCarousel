@@ -13,33 +13,33 @@ import UIKit
  It also handles synchonizaton of the collection views
  */
 
-public class KTPresentationController: UIPresentationController {
+open class KTPresentationController: UIPresentationController {
     
     // MARK: Public Variables
-    public var maskingNavBarColor: UIColor?
+    open var maskingNavBarColor: UIColor?
     
     // MARK: Private Variables
-    private var transitionView = UIImageView()
+    fileprivate var transitionView = UIImageView()
     
-    private let assertionWarningCarouselTransitioning = "Warning : make sure  all VC's being passed in conform to the KTCarouselTransitioning protocol"
+    fileprivate let assertionWarningCarouselTransitioning = "Warning : make sure  all VC's being passed in conform to the KTCarouselTransitioning protocol"
     
-    lazy private var navBarCoverView = UIView()
+    lazy fileprivate var navBarCoverView = UIView()
     
-    private var topFromVC: KTCarouselTransitioning? {
+    fileprivate var topFromVC: KTCarouselTransitioning? {
         let nav = presentingViewController as? UINavigationController
         return nav?.topViewController as? KTCarouselTransitioning
     }
     
-    private var navBarOfPresentingViewController: UIView? {
+    fileprivate var navBarOfPresentingViewController: UIView? {
         guard let nav = presentingViewController as? UINavigationController else { return nil }
-        let snapShotOfNavbar = nav.navigationBar.snapshotViewAfterScreenUpdates(true)
-        snapShotOfNavbar.translatesAutoresizingMaskIntoConstraints = false
+        let snapShotOfNavbar = nav.navigationBar.snapshotView(afterScreenUpdates: true)
+        snapShotOfNavbar?.translatesAutoresizingMaskIntoConstraints = false
         return snapShotOfNavbar
     }
     
     // MARK: Public Overrides of UIPresentationController's view tracking methods
-    override public func presentationTransitionWillBegin() {
-        guard let destinationVC = presentedViewController as? KTCarouselTransitioning, containingView = containerView, transitionCoordinator = presentingViewController.transitionCoordinator()
+    override open func presentationTransitionWillBegin() {
+        guard let destinationVC = presentedViewController as? KTCarouselTransitioning, let containingView = containerView, let transitionCoordinator = presentingViewController.transitionCoordinator
             else {
                 assertionFailure(assertionWarningCarouselTransitioning)
                 return
@@ -59,22 +59,22 @@ public class KTPresentationController: UIPresentationController {
         
         let toView = presentedViewController.view
         
-        toView.frame = containingView.bounds
-        toView.setNeedsLayout()
-        containingView.addSubview(toView)
+        toView?.frame = containingView.bounds
+        toView?.setNeedsLayout()
+        containingView.addSubview(toView!)
         
         setUpImageForTransition(sourceVC, destinationVC: destinationVC, containingView: containingView)
         synchronizeCollectionViews(sourceVC, destinationVC: destinationVC)
         
-        transitionCoordinator.animateAlongsideTransition({ (context) in
-            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: [], animations: {
+        transitionCoordinator.animate(alongsideTransition: { (context) in
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: [], animations: {
                 self.setFinalTransformForImage(sourceVC, destinationVC: destinationVC, containingView: containingView)
                 }, completion: nil)
             }, completion: nil)
     }
     
-    override public func presentationTransitionDidEnd(completed: Bool) {
-        guard let sourceVC = topFromVC, destinationVC = presentedViewController as? KTCarouselTransitioning, containingView = containerView
+    override open func presentationTransitionDidEnd(_ completed: Bool) {
+        guard let sourceVC = topFromVC, let destinationVC = presentedViewController as? KTCarouselTransitioning, let containingView = containerView
             else {
                 assertionFailure(assertionWarningCarouselTransitioning)
                 return
@@ -83,8 +83,8 @@ public class KTPresentationController: UIPresentationController {
         transitionView.removeFromSuperview()
     }
     
-    override public func dismissalTransitionWillBegin() {
-        guard let sourceVC = presentedViewController as? KTCarouselTransitioning, destinationVC = topFromVC, containingView = containerView, transitionCoordinator = presentingViewController.transitionCoordinator() else {
+    override open func dismissalTransitionWillBegin() {
+        guard let sourceVC = presentedViewController as? KTCarouselTransitioning, let destinationVC = topFromVC, let containingView = containerView, let transitionCoordinator = presentingViewController.transitionCoordinator else {
             assertionFailure(assertionWarningCarouselTransitioning)
             return
         }
@@ -93,12 +93,12 @@ public class KTPresentationController: UIPresentationController {
         setUpImageForTransition(sourceVC, destinationVC: destinationVC, containingView: containingView)
         coverNavigationBarIfNecessary(containingView)
         
-        transitionCoordinator.animateAlongsideTransition({ (context) in
-            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: [], animations: {
+        transitionCoordinator.animate(alongsideTransition: { (context) in
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: [], animations: {
                 self.setFinalTransformForImage(sourceVC, destinationVC: destinationVC, containingView: containingView)
                 }, completion: { (complete) in
                     if complete {
-                        UIView.animateWithDuration(0.2, animations: {
+                        UIView.animate(withDuration: 0.2, animations: {
                             self.navBarCoverView.alpha = 0.0
                         })
                     }
@@ -106,8 +106,8 @@ public class KTPresentationController: UIPresentationController {
             }, completion: nil)
     }
     
-    override public func dismissalTransitionDidEnd(completed: Bool) {
-        guard let sourceVC = presentedViewController as? KTCarouselTransitioning, destinationVC = topFromVC, containingView = containerView else {
+    override open func dismissalTransitionDidEnd(_ completed: Bool) {
+        guard let sourceVC = presentedViewController as? KTCarouselTransitioning, let destinationVC = topFromVC, let containingView = containerView else {
             assertionFailure(assertionWarningCarouselTransitioning)
             return
         }
@@ -119,13 +119,13 @@ public class KTPresentationController: UIPresentationController {
     /**
      *   These methods handle the image view that is animated during the zoom out / zoom transitions.
      */
-    private func setUpImageForTransition(sourceVC: KTCarouselTransitioning, destinationVC: KTCarouselTransitioning, containingView: UIView) {
+    fileprivate func setUpImageForTransition(_ sourceVC: KTCarouselTransitioning, destinationVC: KTCarouselTransitioning, containingView: UIView) {
         let convertedStartingFrame = sourceVC.fromImageFrameForGalleryTransitionWithContainerView(containingView)
         let convertedEndingFrame = destinationVC.toImageFrameForGalleryTransitionWithContainerView(containingView, sourceImageFrame: convertedStartingFrame)
         
         // Set the view's frame to the final dimensions and transform it down to match starting dimensions.
         transitionView = UIImageView(frame: convertedEndingFrame)
-        transitionView.contentMode = .ScaleToFill
+        transitionView.contentMode = .scaleToFill
         
         guard let img = sourceVC.imageForGalleryTransition() else {
             assertionFailure("Your sourceVC must supply an image through this protocol")
@@ -137,25 +137,25 @@ public class KTPresentationController: UIPresentationController {
         let scaleX = convertedStartingFrame.width / convertedEndingFrame.width
         let scaleY = convertedStartingFrame.height / convertedEndingFrame.height
         
-        let transform = CGAffineTransformMakeScale(scaleX, scaleY)
+        let transform = CGAffineTransform(scaleX: scaleX, y: scaleY)
         transitionView.transform = transform
-        transitionView.center = CGPointMake(CGRectGetMidX(convertedStartingFrame), CGRectGetMidY(convertedStartingFrame))
+        transitionView.center = CGPoint(x: convertedStartingFrame.midX, y: convertedStartingFrame.midY)
         
         containingView.addSubview(transitionView)
     }
     
-    private func setFinalTransformForImage(sourceVC: KTCarouselTransitioning, destinationVC: KTCarouselTransitioning, containingView: UIView) {
+    fileprivate func setFinalTransformForImage(_ sourceVC: KTCarouselTransitioning, destinationVC: KTCarouselTransitioning, containingView: UIView) {
         let convertedStartingFrame = sourceVC.fromImageFrameForGalleryTransitionWithContainerView(containingView)
         let convertedEndingFrame = destinationVC.toImageFrameForGalleryTransitionWithContainerView(containingView, sourceImageFrame: convertedStartingFrame)
         
         var center = CGPoint()
         var transForm = CGAffineTransform()
         
-        transForm = CGAffineTransformIdentity
-        center = CGPointMake(CGRectGetMidX(convertedEndingFrame), CGRectGetMidY(convertedEndingFrame))
+        transForm = CGAffineTransform.identity
+        center = CGPoint(x: convertedEndingFrame.midX, y: convertedEndingFrame.midY)
         
         // TODO REMOVE: THIS IS FOR DEBUGGING AND TESTING ONLY
-        transitionView.layer.borderColor = UIColor.greenColor().CGColor
+        transitionView.layer.borderColor = UIColor.green.cgColor
         transitionView.layer.borderWidth = 10.0
         
         transitionView.center = center
@@ -166,14 +166,14 @@ public class KTPresentationController: UIPresentationController {
      *    This method syncs the cells between collection views by taking in the index path of the cell selected for zooming.
      *    That index path is sent to the destination collection view which scrolls to that index path.
      */
-    private func synchronizeCollectionViews(sourceVC: KTCarouselTransitioning, destinationVC: KTCarouselTransitioning) {
-        guard let destSyncVC = destinationVC as? KTSynchronizingDelegate, sourceSyncVC = sourceVC as? KTSynchronizingDelegate, path = sourceSyncVC.sourceIndexPath(), cv = destSyncVC.toCollectionView() else {
+    fileprivate func synchronizeCollectionViews(_ sourceVC: KTCarouselTransitioning, destinationVC: KTCarouselTransitioning) {
+        guard let destSyncVC = destinationVC as? KTSynchronizingDelegate, let sourceSyncVC = sourceVC as? KTSynchronizingDelegate, let path = sourceSyncVC.sourceIndexPath(), let cv = destSyncVC.toCollectionView() else {
             assertionFailure(assertionWarningCarouselTransitioning)
             return }
         
-        cv.scrollToItemAtIndexPath(path, atScrollPosition: .None, animated: false)
-        cv.reloadItemsAtIndexPaths([path])
-        if let cell = cv.cellForItemAtIndexPath(path) as? KTCarouselZoomableCell {
+        cv.scrollToItem(at: path as IndexPath, at: UICollectionViewScrollPosition(), animated: false)
+        cv.reloadItems(at: [path as IndexPath])
+        if let cell = cv.cellForItem(at: path as IndexPath) as? KTCarouselZoomableCell {
             destSyncVC.updateSourceSelectedCell?(cell)
         }
     }
@@ -183,32 +183,32 @@ public class KTPresentationController: UIPresentationController {
      *    If the selected collectionViewCell is underneath the navigation bar at the time of animation, upon return it will overlay the navigation bar.
      *     We get a screen shot of the navigation bar and use it as part of the animation transition so that the animating image view goes behind it.
      */
-    private func coverNavigationBarIfNecessary(containingView: UIView) {
-        guard let navBar = navBarOfPresentingViewController, nav = presentingViewController as? UINavigationController else {
+    fileprivate func coverNavigationBarIfNecessary(_ containingView: UIView) {
+        guard let navBar = navBarOfPresentingViewController, let nav = presentingViewController as? UINavigationController else {
             assertionFailure(assertionWarningCarouselTransitioning)
             return }
-        let rect = nav.view.convertRect(nav.navigationBar.frame, toView: nil)
+        let rect = nav.view.convert(nav.navigationBar.frame, to: nil)
         if let color = maskingNavBarColor {
             navBar.backgroundColor = color
         }
         else {
-            navBar.backgroundColor = UIColor.whiteColor()
+            navBar.backgroundColor = UIColor.white
         }
         navBar.frame = rect
         navBarCoverView.addSubview(navBar)
         navBarCoverView.translatesAutoresizingMaskIntoConstraints = false
         containingView.addSubview(navBarCoverView)
-        navBarCoverView.backgroundColor = UIColor.whiteColor()
-        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[cover]|", options: [], metrics: nil, views: ["cover": navBarCoverView]))
-        navBarCoverView.topAnchor.constraintEqualToAnchor(containingView.topAnchor).active = true
-        navBarCoverView.heightAnchor.constraintEqualToConstant(20 + rect.height).active = true
+        navBarCoverView.backgroundColor = UIColor.white
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|[cover]|", options: [], metrics: nil, views: ["cover": navBarCoverView]))
+        navBarCoverView.topAnchor.constraint(equalTo: containingView.topAnchor).isActive = true
+        navBarCoverView.heightAnchor.constraint(equalToConstant: 20 + rect.height).isActive = true
     }
     
     /*
      Convenience
      */
-    private func exposeTransitionViewtoViewControllersIfNecessary(sourceVC: KTCarouselTransitioning, destinationVC: KTCarouselTransitioning) {
-        guard let svc = sourceVC as? KTCarouselTransitioningImageView, dvc = destinationVC as? KTCarouselTransitioningImageView else {
+    fileprivate func exposeTransitionViewtoViewControllersIfNecessary(_ sourceVC: KTCarouselTransitioning, destinationVC: KTCarouselTransitioning) {
+        guard let svc = sourceVC as? KTCarouselTransitioningImageView, let dvc = destinationVC as? KTCarouselTransitioningImageView else {
             return }
         svc.willBeginGalleryTransitionWithImageView(transitionView, isToVC: false)
         dvc.willBeginGalleryTransitionWithImageView(transitionView, isToVC: true)

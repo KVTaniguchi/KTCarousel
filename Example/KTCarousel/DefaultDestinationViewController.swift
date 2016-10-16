@@ -20,7 +20,7 @@ class DefaultDestinationViewController: BaseDestinationViewController, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        destinationCollectionView.registerClass(KTCarouselZoomableCell.self, forCellWithReuseIdentifier: "desCell")
+        destinationCollectionView.register(KTCarouselZoomableCell.self, forCellWithReuseIdentifier: "desCell")
         destinationCollectionView.delegate = self
         destinationCollectionView.dataSource = self
         destinationCollectionView.frame = view.bounds
@@ -32,24 +32,24 @@ class DefaultDestinationViewController: BaseDestinationViewController, UICollect
     }
     
     func viewTapped() {
-        guard let cell = destinationCollectionView.visibleCells().first as? KTCarouselZoomableCell else { return }
+        guard let cell = destinationCollectionView.visibleCells.first as? KTCarouselZoomableCell else { return }
         selectedCellForTransition = cell
-        selectedPath = destinationCollectionView.indexPathForCell(cell)
+        selectedPath = destinationCollectionView.indexPath(for: cell)
         dismissCallback?()
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return exampleData.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCellWithReuseIdentifier("desCell", forIndexPath: indexPath) as? KTCarouselZoomableCell else { return KTCarouselZoomableCell() }
-        cell.imageView.image = UIImage.testingImages()[indexPath.item]
-        cell.scrollView.userInteractionEnabled = true
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "desCell", for: indexPath) as? KTCarouselZoomableCell else { return KTCarouselZoomableCell() }
+        cell.imageView.image = UIImage.testingImages()[(indexPath as NSIndexPath).item]
+        cell.scrollView.isUserInteractionEnabled = true
         return cell
     }
     
@@ -66,26 +66,26 @@ class DefaultDestinationViewController: BaseDestinationViewController, UICollect
     /*
      This is called when the destination view controller is being presented.  Here we are specifying the frame of the image we want to zoom out to.
      */
-    func toImageFrameForGalleryTransitionWithContainerView(containerView: UIView, sourceImageFrame: CGRect) -> CGRect {
+    func toImageFrameForGalleryTransitionWithContainerView(_ containerView: UIView, sourceImageFrame: CGRect) -> CGRect {
         let size = UIImageView.KT_aspectFitSizeForImageSize(sourceImageFrame.size, rect: view.bounds)
-        let originX = CGRectGetMidX(view.bounds) - size.width/2
-        let originY = CGRectGetMidY(view.bounds) - size.height/2
-        let frame = CGRectMake(originX, originY, size.width, size.height)
+        let originX = view.bounds.midX - size.width/2
+        let originY = view.bounds.midY - size.height/2
+        let frame = CGRect(x: originX, y: originY, width: size.width, height: size.height)
         return frame
     }
     
     /*
      This is called when the destination view controller is being dismissed.  here we are specifying the frame of the image we are zooming from.
      */
-    func fromImageFrameForGalleryTransitionWithContainerView(containerView: UIView) -> CGRect {
-        guard let cell = selectedCellForTransition, img = selectedCellForTransition?.imageView, imgSize = img.image?.size else { return CGRectZero }
+    func fromImageFrameForGalleryTransitionWithContainerView(_ containerView: UIView) -> CGRect {
+        guard let cell = selectedCellForTransition, let img = selectedCellForTransition?.imageView, let imgSize = img.image?.size else { return CGRect.zero }
         let size = UIImageView.KT_aspectFitSizeForImageSize(imgSize , rect: img.frame)
         var frame = cell.frame
         frame.origin.x = 0
         frame.origin.y = 0
-        let originX = CGRectGetMidX(frame) - size.width/2
-        let originY = CGRectGetMidY(frame) - size.height/2
-        let xframe = CGRectMake(originX, originY, size.width, size.height)
+        let originX = frame.midX - size.width/2
+        let originY = frame.midY - size.height/2
+        let xframe = CGRect(x: originX, y: originY, width: size.width, height: size.height)
         return xframe
     }
 }

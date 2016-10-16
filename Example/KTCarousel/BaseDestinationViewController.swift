@@ -12,16 +12,16 @@ import KTCarousel
 class BaseDestinationViewController: UIViewController, KTSynchronizingDelegate {
     let destinationCollectionView: UICollectionView
     var exampleData = UIImage.testingImages()
-    var selectedPath: NSIndexPath?
-    var dismissCallback: (Void -> Void)?
+    var selectedPath: IndexPath?
+    var dismissCallback: ((Void) -> Void)?
     
     init() {
         let layout = KTHorizontalPagedFlowLayout()
-        layout.scrollDirection = .Horizontal
+        layout.scrollDirection = .horizontal
         layout.minimumInteritemSpacing = 1.0
         layout.minimumLineSpacing = 1.0
         
-        destinationCollectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
+        destinationCollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -31,8 +31,8 @@ class BaseDestinationViewController: UIViewController, KTSynchronizingDelegate {
     }
     
     // MARK Sync Delegate
-    func sourceIndexPath() -> NSIndexPath? {
-        guard let path = selectedPath else { return NSIndexPath(forItem: 0, inSection: 0) }
+    func sourceIndexPath() -> IndexPath? {
+        guard let path = selectedPath else { return IndexPath(item: 0, section: 0) }
         return path
     }
     

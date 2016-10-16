@@ -6,34 +6,34 @@
 //
 //
 
-public class KTHorizontalPagedFlowLayout: UICollectionViewFlowLayout {
+open class KTHorizontalPagedFlowLayout: UICollectionViewFlowLayout {
     
-    private var minContentOffset: CGFloat {
+    fileprivate var minContentOffset: CGFloat {
         guard let cv = collectionView else { return 0.0 }
         return -cv.contentInset.left
     }
     
-    private var maxContentOffset: CGFloat {
-        guard let cv = collectionView else { return UIScreen.mainScreen().bounds.width }
+    fileprivate var maxContentOffset: CGFloat {
+        guard let cv = collectionView else { return UIScreen.main.bounds.width }
         return minContentOffset + cv.contentSize.width - itemSize.width
     }
     
-    private var snapStep: CGFloat {
+    fileprivate var snapStep: CGFloat {
         return itemSize.width + minimumLineSpacing
     }
     
     //    This offsets the cell's image so that a full image is shown on the left of the collectionview
     //    Modified from: http://stackoverflow.com/questions/13492037/targetcontentoffsetforproposedcontentoffsetwithscrollingvelocity-without-subcla
-    override public func targetContentOffsetForProposedContentOffset(proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
-        guard let cv = collectionView else { return CGPointZero }
-        var offSetAdjustment = CGFloat.max
+    override open func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+        guard let cv = collectionView else { return CGPoint.zero }
+        var offSetAdjustment = CGFloat.greatestFiniteMagnitude
         var proposedOffSet = proposedContentOffset
-        let targetRect = CGRectMake(proposedContentOffset.x, 0.0, cv.bounds.width, cv.bounds.height)
+        let targetRect = CGRect(x: proposedContentOffset.x, y: 0.0, width: cv.bounds.width, height: cv.bounds.height)
         
-        guard let unwrappedAttr = layoutAttributesForElementsInRect(targetRect) else { return CGPointZero }
+        guard let unwrappedAttr = layoutAttributesForElements(in: targetRect) else { return CGPoint.zero }
         
         // TODO Replace this with a better convenience method first(where:) when swift 3 comes out
-        let attr = unwrappedAttr.filter{ $0.representedElementCategory == UICollectionElementCategory.Cell }.first
+        let attr = unwrappedAttr.filter{ $0.representedElementCategory == UICollectionElementCategory.cell }.first
         if let attribute = attr {
             let itemOriginX = attribute.frame.origin.x
             if abs(itemOriginX - proposedContentOffset.x) < abs(offSetAdjustment) {
@@ -65,7 +65,7 @@ public class KTHorizontalPagedFlowLayout: UICollectionViewFlowLayout {
         return proposedOffSet
     }
     
-    func isValidOffset(offSet: CGFloat) -> Bool {
+    func isValidOffset(_ offSet: CGFloat) -> Bool {
         return offSet >= minContentOffset && offSet <= maxContentOffset
     }
     

@@ -11,19 +11,19 @@ import QuartzCore
 
 extension UIColor {
     static var colors: [UIColor] {
-        return [UIColor.redColor(), UIColor.orangeColor(), UIColor.purpleColor(), UIColor.cyanColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.yellowColor()]
+        return [UIColor.red, UIColor.orange, UIColor.purple, UIColor.cyan, UIColor.blue, UIColor.green, UIColor.yellow]
     }
     
-    static func colorForIndex(index: Int) -> UIColor {
+    static func colorForIndex(_ index: Int) -> UIColor {
         return colors[index]
     }
 }
 
 extension UIImage {
-    static func imageFromView(view: UIView) -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
+    static func imageFromView(_ view: UIView) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.isOpaque, 0.0);
         guard let ctx = UIGraphicsGetCurrentContext() else { return nil }
-        view.layer.renderInContext(ctx)
+        view.layer.render(in: ctx)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image

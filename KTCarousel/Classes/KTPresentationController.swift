@@ -74,7 +74,7 @@ open class KTPresentationController: UIPresentationController {
     }
     
     override open func presentationTransitionDidEnd(_ completed: Bool) {
-        guard let sourceVC = topFromVC, let destinationVC = presentedViewController as? KTCarouselTransitioning, let containingView = containerView
+        guard let sourceVC = topFromVC, let destinationVC = presentedViewController as? KTCarouselTransitioning
             else {
                 assertionFailure(assertionWarningCarouselTransitioning)
                 return
@@ -107,7 +107,7 @@ open class KTPresentationController: UIPresentationController {
     }
     
     override open func dismissalTransitionDidEnd(_ completed: Bool) {
-        guard let sourceVC = presentedViewController as? KTCarouselTransitioning, let destinationVC = topFromVC, let containingView = containerView else {
+        guard let sourceVC = presentedViewController as? KTCarouselTransitioning, let destinationVC = topFromVC else {
             assertionFailure(assertionWarningCarouselTransitioning)
             return
         }

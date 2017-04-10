@@ -42,7 +42,7 @@
 		1B496C5D1FE80C140194ADE40EF29D63 /* Pods-KTCarousel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTCarousel_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1DDE8EF79CBB038FD0BA2C3E0846AB56 /* Pods-KTCarousel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2445DEC125A0B942476E17578EFF8C5B /* Pods-KTCarousel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		26B2A78C6220B3A108DBFAA2201F13A6 /* KTCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KTCarousel.modulemap; sourceTree = "<group>"; };
+		26B2A78C6220B3A108DBFAA2201F13A6 /* KTCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KTCarousel.modulemap; sourceTree = "<group>"; };
 		30088912D7765A3506277DAE48F889A6 /* Pods-KTCarousel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTCarousel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		46076B0E2E8DC3847A8700FDAD2E5F4B /* Pods-KTCarousel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4F8EA2051870B66549A7DC4B522D65B0 /* Pods-KTCarousel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTCarousel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -50,25 +50,25 @@
 		693D6269B2F878922787BEC072FAD670 /* Pods-KTCarousel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTCarousel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6A64371030CFC3F8678969F30243A45B /* KTHorizontalPagedFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KTHorizontalPagedFlowLayout.swift; sourceTree = "<group>"; };
 		6DFA67C36A560E1E7489D45FFC75B39A /* KTCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTCarousel.xcconfig; sourceTree = "<group>"; };
-		6F4EAED28BE6E8820071B6F0E0CBDB27 /* Pods-KTCarousel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KTCarousel_Example.modulemap"; sourceTree = "<group>"; };
+		6F4EAED28BE6E8820071B6F0E0CBDB27 /* Pods-KTCarousel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTCarousel_Example.modulemap"; sourceTree = "<group>"; };
 		75B7134747FFA48747553F8FC2CE000E /* Pods-KTCarousel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A5A95BB7173D975F6B5920E2346F0BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8820FCE47B495EA3ED4F0134AFC56943 /* Pods-KTCarousel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTCarousel_Example-frameworks.sh"; sourceTree = "<group>"; };
 		906263E4C8E317215ABFC02CADD769E0 /* KTCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KTCarousel-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98D311CE2DF38869814D5038ACDF9630 /* KTZoomableCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KTZoomableCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A6CED269CC75FC84EC44F45656FA497 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C3242FFE0FA675FC83126A5E7C63E44 /* UIImage+ImageFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageFrame.swift"; sourceTree = "<group>"; };
 		9E6A40F312DF70858ECADBD8615C3DDB /* Pods-KTCarousel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTCarousel_Example-resources.sh"; sourceTree = "<group>"; };
 		B0A1BD3318588CDF1B56976D1AF445B1 /* KTCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTCarousel-umbrella.h"; sourceTree = "<group>"; };
-		BDB480F2E9C8E9B8914A2C8F6536A2D1 /* KTCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KTCarousel.framework; path = KTCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB480F2E9C8E9B8914A2C8F6536A2D1 /* KTCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FA9BAC7E1AB7CFFE257AA0D9FACCBA /* KTCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTCarousel-prefix.pch"; sourceTree = "<group>"; };
 		CADECB0FE11FCE7CC5184B3C39076F1E /* Pods-KTCarousel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTCarousel_Example-umbrella.h"; sourceTree = "<group>"; };
 		DE23125A170385FBA2D7B3E6CA9903BE /* KTCarouselTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KTCarouselTransitionController.swift; sourceTree = "<group>"; };
 		E8C0553AB5967721D1BAD445A214E39E /* KTPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KTPresentationController.swift; sourceTree = "<group>"; };
-		EAA010F8622870DE32DDC0A3F636BD33 /* Pods_KTCarousel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KTCarousel_Tests.framework; path = "Pods-KTCarousel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE7A0F485206A9AE39D9EC57EFAB0F34 /* Pods-KTCarousel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KTCarousel_Tests.modulemap"; sourceTree = "<group>"; };
-		F0077CA5E5F593823AFED35807BB8AA3 /* Pods_KTCarousel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KTCarousel_Example.framework; path = "Pods-KTCarousel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA010F8622870DE32DDC0A3F636BD33 /* Pods_KTCarousel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTCarousel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7A0F485206A9AE39D9EC57EFAB0F34 /* Pods-KTCarousel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTCarousel_Tests.modulemap"; sourceTree = "<group>"; };
+		F0077CA5E5F593823AFED35807BB8AA3 /* Pods_KTCarousel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTCarousel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BD3E05714849DD01DB73EED45B9EFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F96FAAD3A55E8AD9B15DFA7D3F3214A8 /* KTCarouselProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KTCarouselProtocols.swift; sourceTree = "<group>"; };
 		FC9AEE0185E87342F008D4925438A2BB /* Pods-KTCarousel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTCarousel_Example-dummy.m"; sourceTree = "<group>"; };
@@ -117,7 +117,6 @@
 			children = (
 				6A84F0394AFA6B82E337E808A147C4CF /* Classes */,
 			);
-			name = KTCarousel;
 			path = KTCarousel;
 			sourceTree = "<group>";
 		};
@@ -158,7 +157,6 @@
 				98D311CE2DF38869814D5038ACDF9630 /* KTZoomableCollectionViewCell.swift */,
 				9C3242FFE0FA675FC83126A5E7C63E44 /* UIImage+ImageFrame.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};

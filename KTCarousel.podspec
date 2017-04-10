@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KTCarousel'
-  s.version          = '1.01'
+  s.version          = '1.02'
   s.summary          = 'A side scrolling, zoomable carousel.'
 
   s.description      = <<-DESC

@@ -13,7 +13,7 @@ class BaseDestinationViewController: UIViewController, KTSynchronizingDelegate {
     let destinationCollectionView: UICollectionView
     var exampleData = UIImage.testingImages()
     var selectedPath: IndexPath?
-    var dismissCallback: ((Void) -> Void)?
+    var dismissCallback: (() -> Void)?
     
     init() {
         let layout = KTHorizontalPagedFlowLayout()

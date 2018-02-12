@@ -9,11 +9,13 @@
 import UIKit
 import KTCarousel
 
+typealias EmptyHandler = () -> Void
+
 class BaseDestinationViewController: UIViewController, KTSynchronizingDelegate {
     let destinationCollectionView: UICollectionView
     var exampleData = UIImage.testingImages()
     var selectedPath: IndexPath?
-    var dismissCallback: (() -> Void)?
+    var dismissCallback: EmptyHandler?
     
     init() {
         let layout = KTHorizontalPagedFlowLayout()

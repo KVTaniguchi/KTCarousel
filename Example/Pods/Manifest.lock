@@ -1,16 +1,16 @@
 PODS:
-  - KTCarousel (1.0)
+  - KTCarousel (1.02)
 
 DEPENDENCIES:
   - KTCarousel (from `../`)
 
 EXTERNAL SOURCES:
   KTCarousel:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  KTCarousel: '039723ce2207c1252f0e40e2f35ec61c399699a4'
+  KTCarousel: 175f6514980f1604a4322a4d91e89fa4c987175e
 
-PODFILE CHECKSUM: 8c55777afb60e547a8c864f024ec9853d22197ed
+PODFILE CHECKSUM: 23b777180c4f345d420c54361c2c2cd1b2d8d8de
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0

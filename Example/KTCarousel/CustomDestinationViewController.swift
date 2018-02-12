@@ -28,7 +28,7 @@ class CustomDestinationViewController: BaseDestinationViewController, UICollecti
         view.addGestureRecognizer(tap)
     }
     
-    func viewTapped() {
+    @objc func viewTapped() {
         guard let cell = destinationCollectionView.visibleCells.first as? NonZoomingCustomLayoutCollectionViewCell else { return }
         selectedCellForTransition = cell
         selectedPath = destinationCollectionView.indexPath(for: cell)

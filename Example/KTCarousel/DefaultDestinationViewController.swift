@@ -31,7 +31,7 @@ class DefaultDestinationViewController: BaseDestinationViewController, UICollect
         view.addGestureRecognizer(tap)
     }
     
-    func viewTapped() {
+    @objc func viewTapped() {
         guard let cell = destinationCollectionView.visibleCells.first as? KTCarouselZoomableCell else { return }
         selectedCellForTransition = cell
         selectedPath = destinationCollectionView.indexPath(for: cell)

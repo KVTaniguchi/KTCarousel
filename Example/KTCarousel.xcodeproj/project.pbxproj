@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		1BAB5E802F50687C62F2B8DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3739D81D25FCE86866C55932 /* Pods-KTCarousel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTCarousel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KTCarousel_Example/Pods-KTCarousel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4279B7CA80FFB35CBB4F03A2 /* KTCarousel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KTCarousel.podspec; path = ../KTCarousel.podspec; sourceTree = "<group>"; };
+		4279B7CA80FFB35CBB4F03A2 /* KTCarousel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KTCarousel.podspec; path = ../KTCarousel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* KTCarousel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTCarousel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };

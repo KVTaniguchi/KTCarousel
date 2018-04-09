@@ -55,15 +55,15 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "tbvCell", for: indexPath) as? SampleCell else { return SampleCell() }
         
         cell.cellSelectedCallback = {[weak self] selectedCell in
-            guard let weakSelf = self else { return }
-            weakSelf.selectedCollectionViewForTransition = cell.sourceCV
-            weakSelf.selectedCellForTransition = selectedCell
+            guard let strongSelf = self else { return }
+            strongSelf.selectedCollectionViewForTransition = cell.sourceCV
+            strongSelf.selectedCellForTransition = selectedCell
             
             switch (indexPath as NSIndexPath).section {
             case 1:
-                weakSelf.presentCustomDestinationViewController()
+                strongSelf.presentCustomDestinationViewController()
             default:
-                weakSelf.presentDefaultDestinationViewController()
+                strongSelf.presentDefaultDestinationViewController()
             }
         }
         

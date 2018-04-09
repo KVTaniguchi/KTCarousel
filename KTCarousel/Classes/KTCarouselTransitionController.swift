@@ -22,14 +22,22 @@ open class KTCarouselTransitionController: NSObject, UIViewControllerAnimatedTra
     fileprivate weak var context: UIViewControllerContextTransitioning?
     fileprivate var transitionView = UIImageView()
     fileprivate var originalSelectedCellFrame = CGRect.zero
-    fileprivate var springCompletionSpeed: CGFloat = 0.7
+    fileprivate let springCompletionSpeed: CGFloat
     fileprivate var sourceViewController: UIViewController?
     open var presentationController: KTPresentationController?
     fileprivate var isDismissing = false
+    fileprivate let transitionDuration: TimeInterval
+    
+    public init(transitionDuration: TimeInterval = 0.5, springCompletionSpeed: CGFloat = 0.7) {
+        self.transitionDuration = transitionDuration
+        self.springCompletionSpeed = springCompletionSpeed
+        
+        super.init()
+    }
     
     // MARK: UIViewControllerAnimatedTransitioning Delegate Methods - Non-Interactive
     open func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.5
+        return transitionDuration
     }
     
     open func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {

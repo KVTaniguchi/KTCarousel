@@ -32,9 +32,7 @@ open class KTHorizontalPagedFlowLayout: UICollectionViewFlowLayout {
         
         guard let unwrappedAttr = layoutAttributesForElements(in: targetRect) else { return CGPoint.zero }
         
-        // TODO Replace this with a better convenience method first(where:) when swift 3 comes out
-        let attr = unwrappedAttr.filter{ $0.representedElementCategory == UICollectionElementCategory.cell }.first
-        if let attribute = attr {
+        if let attribute = unwrappedAttr.first(where: {$0.representedElementCategory == .cell}) {
             let itemOriginX = attribute.frame.origin.x
             if abs(itemOriginX - proposedContentOffset.x) < abs(offSetAdjustment) {
                 offSetAdjustment = itemOriginX - proposedContentOffset.x

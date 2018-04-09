@@ -154,10 +154,6 @@ open class KTPresentationController: UIPresentationController {
         transForm = CGAffineTransform.identity
         center = CGPoint(x: convertedEndingFrame.midX, y: convertedEndingFrame.midY)
         
-        // TODO REMOVE: THIS IS FOR DEBUGGING AND TESTING ONLY
-        transitionView.layer.borderColor = UIColor.green.cgColor
-        transitionView.layer.borderWidth = 10.0
-        
         transitionView.center = center
         transitionView.transform = transForm
     }

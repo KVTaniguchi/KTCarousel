@@ -482,7 +482,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3739D81D25FCE86866C55932 /* Pods-KTCarousel_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3B3FT42G96;
 				INFOPLIST_FILE = KTCarousel/Info.plist;
@@ -500,7 +499,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE682CF22D6C724873AFE84A /* Pods-KTCarousel_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3B3FT42G96;
 				INFOPLIST_FILE = KTCarousel/Info.plist;

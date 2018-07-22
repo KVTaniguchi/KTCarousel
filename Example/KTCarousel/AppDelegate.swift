@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var mainNav = UINavigationController()
     var sourceVC = SourceViewController()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         mainNav.pushViewController(sourceVC, animated: false)
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = mainNav

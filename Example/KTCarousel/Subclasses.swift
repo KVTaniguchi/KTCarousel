@@ -14,7 +14,7 @@ class SampleCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewD
     let data = UIImage.testingImages()
     var cellSelectedCallback: ((KTCarouselZoomableCell) -> Void)?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         let layout = KTHorizontalPagedFlowLayout()
         layout.minimumLineSpacing = 1.0
         layout.minimumInteritemSpacing = 1.0

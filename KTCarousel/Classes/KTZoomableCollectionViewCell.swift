@@ -14,8 +14,8 @@ import UIKit
  
  */
 open class KTCarouselZoomableCell: UICollectionViewCell, UIScrollViewDelegate {
-    open let scrollView = UIScrollView()
-    open let imageView = UIImageView()
+    public let scrollView = UIScrollView()
+    public let imageView = UIImageView()
     
     public override init(frame: CGRect) {
         super.init(frame: frame)

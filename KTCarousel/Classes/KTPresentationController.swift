@@ -167,7 +167,7 @@ open class KTPresentationController: UIPresentationController {
             assertionFailure(assertionWarningCarouselTransitioning)
             return }
         
-        cv.scrollToItem(at: path as IndexPath, at: UICollectionViewScrollPosition(), animated: false)
+        cv.scrollToItem(at: path as IndexPath, at: UICollectionView.ScrollPosition(), animated: false)
         cv.reloadItems(at: [path as IndexPath])
         if let cell = cv.cellForItem(at: path as IndexPath) as? KTCarouselZoomableCell {
             destSyncVC.updateSourceSelectedCell?(cell)

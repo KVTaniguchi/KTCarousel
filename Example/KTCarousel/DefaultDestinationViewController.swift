@@ -3,7 +3,7 @@
 //  KTCarousel
 //
 //  Created by Kevin Taniguchi on 6/16/16.
-//  Copyright © 2016 CocoaPods. All rights reserved.
+//  Copyright © 2016 Kevin Taniguchi. All rights reserved.
 //
 
 import UIKit

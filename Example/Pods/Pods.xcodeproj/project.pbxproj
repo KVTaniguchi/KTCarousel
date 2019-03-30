@@ -7,298 +7,311 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CCE1CFBB5FCCF526DC110F52368CE8F /* KTCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1599C73E2201C38F89B2742A69A021F6 /* KTCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1577B6C86B761A689F5BD21257EE4E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		16271926579AEFBC539E1593C4425B4A /* UIImage+ImageFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF9F703715A953335041AEED4390A2 /* UIImage+ImageFrame.swift */; };
-		21CD85816CFE5707885CC9E0338FF7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		4771A71864FD83849DA83B5D6B7D2D21 /* KTCarouselTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CBC17021AEF91467E5E495D4343EFC /* KTCarouselTransitionController.swift */; };
-		550D9C08FAA4A36DAE782261F401A0A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		68611D4D830018D7BFFDAD318CC74207 /* KTZoomableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F7BCB67ADA7322EE1EF39A84D40BC9 /* KTZoomableCollectionViewCell.swift */; };
-		6F02906B65604F207F05AA18C0F3398D /* Pods-KTCarousel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5819024F7A75F96ABA74E900E22C8332 /* Pods-KTCarousel_Tests-dummy.m */; };
-		749CB65927D5A494CE68F2C34068D148 /* Pods-KTCarousel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D991EC33AB918733FA0E34CBC096EB /* Pods-KTCarousel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83820FA5A1315EA05A3859457E6FB1B8 /* Pods-KTCarousel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B07D6EBDC460FE38E5C66B6100F688D7 /* Pods-KTCarousel_Example-dummy.m */; };
-		8668BCEA9CEFB84042B50BCAF47352FF /* Pods-KTCarousel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79F2A7C9AF364250CC030129BD0E088C /* Pods-KTCarousel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		953EACA77D46D626CB04E5B8777CD72F /* KTCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F03FD6267AACD463A20DEE1A8BCE835A /* KTCarousel-dummy.m */; };
-		AC08C3A65CC050D0C41EF1296202728C /* KTCarouselProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB07E110AB941ABC45DAFF147D6595 /* KTCarouselProtocols.swift */; };
-		E457A8E838AC61107C68F70DC055CFF9 /* KTPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223944CC389BE9116EEC034DC7DD7323 /* KTPresentationController.swift */; };
-		E50B602F5A2E22AA78C443ADCE29A6FE /* KTHorizontalPagedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E837C63B998109E84EEC85837ECB29 /* KTHorizontalPagedFlowLayout.swift */; };
+		047E8A2270982746A3EE69900EAEAA3D /* KTZoomableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CC371F06EAFD6965E70467B6612ACA /* KTZoomableCollectionViewCell.swift */; };
+		0CC35FF3A0CD61952B2C406FAE88092F /* KTPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01182147CC3BB264AF543925C2AC45D /* KTPresentationController.swift */; };
+		126A2F3077EA119047E4BF353A231B04 /* UIImage+ImageFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DBD7C2A4BB2E6DDDF84092D2DDE645 /* UIImage+ImageFrame.swift */; };
+		150A3B83B924435D73CD39B67F033430 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		235F1E989577AFFBC5A9784FACE7FA70 /* KTCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E92A7B38CF73EF132B42D0D1B33271 /* KTCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9E77FD4AC432D0803EE2A9D2A7CDBC /* Pods-KTCarousel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3139CF24E9991B42018FC262C683EB7D /* Pods-KTCarousel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A45C0C9A79CA6D291181ADDD778A837 /* Pods-KTCarousel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C15650E84EBBDD83CEC54C5C1940944 /* Pods-KTCarousel_Example-dummy.m */; };
+		63BA72AB3983D5F91723F20F94662F2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		679ADA185CBDBB74D07DC5F8301AEE3E /* Pods-KTCarousel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF0877FF10E808B77F478F95775C5508 /* Pods-KTCarousel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70935B91C72946F5BF3EFB0DC5D8291C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		83644E24B8F21660CD681E716091223C /* KTCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD357E1D7F8CD70BEAB71D53948DAA0F /* KTCarousel-dummy.m */; };
+		8CF815006AE917847A41206342CEF212 /* KTHorizontalPagedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD364020E092E40A20389FEE1F6B5031 /* KTHorizontalPagedFlowLayout.swift */; };
+		ABA10E284BF619147363C1AFC1EF2CFC /* Pods-KTCarousel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A32F2D23F1484EE3A413AC9CC549318 /* Pods-KTCarousel_Tests-dummy.m */; };
+		BC192016A42B928F5EE138FC60CA5012 /* KTCarouselProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F063A12B0591EE3D24DB5202887A4 /* KTCarouselProtocols.swift */; };
+		C422EF365859C8C71810F9616A4F52F8 /* KTCarouselTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98788E1348760EC8CF672EF4F0899118 /* KTCarouselTransitionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8731B237FB50C8B9E4B88E2621615302 /* PBXContainerItemProxy */ = {
+		F72DEC5C33ED698AC696F8718F2E70C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C8F8757B3359B2217B0B85A2E3959F64;
-			remoteInfo = "Pods-KTCarousel_Example";
-		};
-		8DBF8FA5B830D2C8B8B4A55435E89A69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C8EA218644B8DF59BC5A066EB1871FDB;
+			remoteGlobalIDString = A0917777912FF8853855C1F12B84E619;
 			remoteInfo = KTCarousel;
+		};
+		FD79626A90A0D5E65B21B87C523F5075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80E2DF51E424F4DCE8BEBECC8E32BFA9;
+			remoteInfo = "Pods-KTCarousel_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1599C73E2201C38F89B2742A69A021F6 /* KTCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTCarousel-umbrella.h"; sourceTree = "<group>"; };
-		18D991EC33AB918733FA0E34CBC096EB /* Pods-KTCarousel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTCarousel_Tests-umbrella.h"; sourceTree = "<group>"; };
-		1FDFCEE246B592E617E25EFE2AE0F215 /* Pods-KTCarousel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTCarousel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		223944CC389BE9116EEC034DC7DD7323 /* KTPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTPresentationController.swift; path = KTCarousel/Classes/KTPresentationController.swift; sourceTree = "<group>"; };
-		36AC51203CA09A36FBCBCEC7C9A76E6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37359A93DD7F4C7063CB0087D6B7B3EB /* Pods-KTCarousel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTCarousel_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		3EFB1B36CD38C1181E6E8CADC837DA4C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		492ED1BD2E966B4D6B81EE8A085D587B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CF22C43744B76917927673EBFBE520E /* Pods-KTCarousel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTCarousel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		53318E837230A14C2D0F0F74C76C364D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		5364BBB494536A8B8AED7C07135069CF /* Pods-KTCarousel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		57A1C26A8BC01CC92F0FC96620DAA532 /* Pods-KTCarousel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTCarousel_Example-frameworks.sh"; sourceTree = "<group>"; };
-		5819024F7A75F96ABA74E900E22C8332 /* Pods-KTCarousel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTCarousel_Tests-dummy.m"; sourceTree = "<group>"; };
-		58CBC17021AEF91467E5E495D4343EFC /* KTCarouselTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTCarouselTransitionController.swift; path = KTCarousel/Classes/KTCarouselTransitionController.swift; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5ADF9F703715A953335041AEED4390A2 /* UIImage+ImageFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageFrame.swift"; path = "KTCarousel/Classes/UIImage+ImageFrame.swift"; sourceTree = "<group>"; };
-		6BA316D0685A2D87D467D4ADA857CC88 /* Pods-KTCarousel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		71D2E74005E9B2AB4E74F29186667707 /* KTCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTCarousel.xcconfig; sourceTree = "<group>"; };
-		79F2A7C9AF364250CC030129BD0E088C /* Pods-KTCarousel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTCarousel_Example-umbrella.h"; sourceTree = "<group>"; };
-		7BEBEF8A861BD0DBB85FD76A8C364500 /* Pods-KTCarousel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KTCarousel_Example.modulemap"; sourceTree = "<group>"; };
-		90FB07E110AB941ABC45DAFF147D6595 /* KTCarouselProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTCarouselProtocols.swift; path = KTCarousel/Classes/KTCarouselProtocols.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98C178A8188C6E193F1DE9703EB5C77A /* Pods-KTCarousel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		98E837C63B998109E84EEC85837ECB29 /* KTHorizontalPagedFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTHorizontalPagedFlowLayout.swift; path = KTCarousel/Classes/KTHorizontalPagedFlowLayout.swift; sourceTree = "<group>"; };
-		9FBD668CEED5269F2A744D502EB2E86F /* KTCarousel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = KTCarousel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2E5647F24ABD2F9E085DB1A4121B061 /* Pods-KTCarousel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KTCarousel_Tests.modulemap"; sourceTree = "<group>"; };
-		A92509C0C14EFC4D9925CEDD08540E23 /* Pods-KTCarousel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTCarousel_Tests-resources.sh"; sourceTree = "<group>"; };
-		B07D6EBDC460FE38E5C66B6100F688D7 /* Pods-KTCarousel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTCarousel_Example-dummy.m"; sourceTree = "<group>"; };
-		B0D4A78BB272DD8B152F72AB9407D786 /* KTCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KTCarousel.modulemap; sourceTree = "<group>"; };
-		B9B3544C8299F2FD8081C26C11C36033 /* KTCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTCarousel-prefix.pch"; sourceTree = "<group>"; };
-		B9F38AAEDD93A7B9AC41DC63C070349E /* Pods-KTCarousel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BDB480F2E9C8E9B8914A2C8F6536A2D1 /* KTCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB73956719B6A991C2951356451B4497 /* Pods-KTCarousel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTCarousel_Example-resources.sh"; sourceTree = "<group>"; };
-		D0F7BCB67ADA7322EE1EF39A84D40BC9 /* KTZoomableCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTZoomableCollectionViewCell.swift; path = KTCarousel/Classes/KTZoomableCollectionViewCell.swift; sourceTree = "<group>"; };
-		DB00534B52B1198EBBED9CCAA2CF52AB /* Pods-KTCarousel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTCarousel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EAA010F8622870DE32DDC0A3F636BD33 /* Pods_KTCarousel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTCarousel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED21A7C1D3969BD5D589F264C5751348 /* Pods-KTCarousel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTCarousel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F0077CA5E5F593823AFED35807BB8AA3 /* Pods_KTCarousel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTCarousel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F03FD6267AACD463A20DEE1A8BCE835A /* KTCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KTCarousel-dummy.m"; sourceTree = "<group>"; };
-		FCAB525907C998BF8C738F45BACFAED9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		02C2D5A2DD366F974E791D95F5924868 /* KTCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTCarousel-prefix.pch"; sourceTree = "<group>"; };
+		05429AF119022EE4BDF1702B8871EE34 /* Pods-KTCarousel_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTCarousel_Example-Info.plist"; sourceTree = "<group>"; };
+		11FC891704BC092241018F346CBB3BA9 /* Pods-KTCarousel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTCarousel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B39EEDF6A6DD71D4B70DCBEE4258DB4 /* Pods-KTCarousel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1F5341803F81EC10C03645B0069EA7C7 /* Pods-KTCarousel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTCarousel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3139CF24E9991B42018FC262C683EB7D /* Pods-KTCarousel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTCarousel_Example-umbrella.h"; sourceTree = "<group>"; };
+		4AEAD40E28219CA4B977886AC5E37A2E /* Pods-KTCarousel_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTCarousel_Tests-Info.plist"; sourceTree = "<group>"; };
+		4F0F64E8596985613BB7326C04042D26 /* Pods-KTCarousel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KTCarousel_Tests.modulemap"; sourceTree = "<group>"; };
+		5361C7379FA7AD739ACE04A293617122 /* KTCarousel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KTCarousel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5CDF734F44C3EB29BB4487D391375943 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		61A558A9F551E766A6C26602FF4BAECE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		632A1AF862DE409CBDBA8FF6A1CF787C /* KTCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTCarousel.xcconfig; sourceTree = "<group>"; };
+		637D0FC7DE3C21E82E392B725FC9D8E6 /* Pods_KTCarousel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KTCarousel_Tests.framework; path = "Pods-KTCarousel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CC371F06EAFD6965E70467B6612ACA /* KTZoomableCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTZoomableCollectionViewCell.swift; path = KTCarousel/Classes/KTZoomableCollectionViewCell.swift; sourceTree = "<group>"; };
+		727DD946E843C612AF6765ABA78E6A4A /* KTCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KTCarousel.modulemap; sourceTree = "<group>"; };
+		75DBD7C2A4BB2E6DDDF84092D2DDE645 /* UIImage+ImageFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageFrame.swift"; path = "KTCarousel/Classes/UIImage+ImageFrame.swift"; sourceTree = "<group>"; };
+		7A32F2D23F1484EE3A413AC9CC549318 /* Pods-KTCarousel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTCarousel_Tests-dummy.m"; sourceTree = "<group>"; };
+		80CF2B82FF41A85524A559905A2F391F /* Pods_KTCarousel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KTCarousel_Example.framework; path = "Pods-KTCarousel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C15650E84EBBDD83CEC54C5C1940944 /* Pods-KTCarousel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTCarousel_Example-dummy.m"; sourceTree = "<group>"; };
+		90E4D97FD51C2A6846738F4F121DE2A1 /* Pods-KTCarousel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		98788E1348760EC8CF672EF4F0899118 /* KTCarouselTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTCarouselTransitionController.swift; path = KTCarousel/Classes/KTCarouselTransitionController.swift; sourceTree = "<group>"; };
+		9B89C16473AEC8BA2F97B465DF033122 /* Pods-KTCarousel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTCarousel_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EE85205983ABC9DB7615343C0B362C9 /* Pods-KTCarousel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AD357E1D7F8CD70BEAB71D53948DAA0F /* KTCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KTCarousel-dummy.m"; sourceTree = "<group>"; };
+		AF0877FF10E808B77F478F95775C5508 /* Pods-KTCarousel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTCarousel_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B01182147CC3BB264AF543925C2AC45D /* KTPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTPresentationController.swift; path = KTCarousel/Classes/KTPresentationController.swift; sourceTree = "<group>"; };
+		C6F7442A6565EE9B0DE1FFB0DFDA500F /* Pods-KTCarousel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KTCarousel_Example.modulemap"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0E92A7B38CF73EF132B42D0D1B33271 /* KTCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTCarousel-umbrella.h"; sourceTree = "<group>"; };
+		D5FE266224660241A7C068D6A608FE7E /* Pods-KTCarousel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTCarousel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D9F97C997502EEA0F4696CB2A4E68F72 /* KTCarousel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KTCarousel-Info.plist"; sourceTree = "<group>"; };
+		E21F063A12B0591EE3D24DB5202887A4 /* KTCarouselProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTCarouselProtocols.swift; path = KTCarousel/Classes/KTCarouselProtocols.swift; sourceTree = "<group>"; };
+		E3E7F8ADA3874B2203DCA96FEAA2AC10 /* KTCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KTCarousel.framework; path = KTCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58A43C702BD8A20DEFEB1C1F760B6B4 /* Pods-KTCarousel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTCarousel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EEF4C53F177E058A950DBA067C5DE3A9 /* Pods-KTCarousel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTCarousel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD364020E092E40A20389FEE1F6B5031 /* KTHorizontalPagedFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KTHorizontalPagedFlowLayout.swift; path = KTCarousel/Classes/KTHorizontalPagedFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		80D462993F08BFB4E6C6D01FA883BAC4 /* Frameworks */ = {
+		4F7E207DFFCB6F34539EB2D31BE47A65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550D9C08FAA4A36DAE782261F401A0A0 /* Foundation.framework in Frameworks */,
+				70935B91C72946F5BF3EFB0DC5D8291C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3F249B180D1B72002B2F57F3D36E1CB /* Frameworks */ = {
+		9ECC07B671B4F072A1D598D7F0ADF9A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21CD85816CFE5707885CC9E0338FF7C5 /* Foundation.framework in Frameworks */,
+				150A3B83B924435D73CD39B67F033430 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D69250F197ACAE647578AE046BB63002 /* Frameworks */ = {
+		C838FC2E34EB11E58872201167CC9446 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1577B6C86B761A689F5BD21257EE4E2E /* Foundation.framework in Frameworks */,
+				63BA72AB3983D5F91723F20F94662F2D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D390FF5C8DA8EA49A1467137B463BE9 /* Pods-KTCarousel_Tests */ = {
+		10659FCB5865A24BA969016D86D99CE4 /* Pods-KTCarousel_Example */ = {
 			isa = PBXGroup;
 			children = (
-				492ED1BD2E966B4D6B81EE8A085D587B /* Info.plist */,
-				A2E5647F24ABD2F9E085DB1A4121B061 /* Pods-KTCarousel_Tests.modulemap */,
-				ED21A7C1D3969BD5D589F264C5751348 /* Pods-KTCarousel_Tests-acknowledgements.markdown */,
-				4CF22C43744B76917927673EBFBE520E /* Pods-KTCarousel_Tests-acknowledgements.plist */,
-				5819024F7A75F96ABA74E900E22C8332 /* Pods-KTCarousel_Tests-dummy.m */,
-				37359A93DD7F4C7063CB0087D6B7B3EB /* Pods-KTCarousel_Tests-frameworks.sh */,
-				A92509C0C14EFC4D9925CEDD08540E23 /* Pods-KTCarousel_Tests-resources.sh */,
-				18D991EC33AB918733FA0E34CBC096EB /* Pods-KTCarousel_Tests-umbrella.h */,
-				6BA316D0685A2D87D467D4ADA857CC88 /* Pods-KTCarousel_Tests.debug.xcconfig */,
-				5364BBB494536A8B8AED7C07135069CF /* Pods-KTCarousel_Tests.release.xcconfig */,
-			);
-			name = "Pods-KTCarousel_Tests";
-			path = "Target Support Files/Pods-KTCarousel_Tests";
-			sourceTree = "<group>";
-		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		639AA09DC3719D80A3410B1474223D5F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				791DD2D414745A1BEA8236FB47AD3BFA /* Pods-KTCarousel_Example */,
-				3D390FF5C8DA8EA49A1467137B463BE9 /* Pods-KTCarousel_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		791DD2D414745A1BEA8236FB47AD3BFA /* Pods-KTCarousel_Example */ = {
-			isa = PBXGroup;
-			children = (
-				3EFB1B36CD38C1181E6E8CADC837DA4C /* Info.plist */,
-				7BEBEF8A861BD0DBB85FD76A8C364500 /* Pods-KTCarousel_Example.modulemap */,
-				1FDFCEE246B592E617E25EFE2AE0F215 /* Pods-KTCarousel_Example-acknowledgements.markdown */,
-				DB00534B52B1198EBBED9CCAA2CF52AB /* Pods-KTCarousel_Example-acknowledgements.plist */,
-				B07D6EBDC460FE38E5C66B6100F688D7 /* Pods-KTCarousel_Example-dummy.m */,
-				57A1C26A8BC01CC92F0FC96620DAA532 /* Pods-KTCarousel_Example-frameworks.sh */,
-				CB73956719B6A991C2951356451B4497 /* Pods-KTCarousel_Example-resources.sh */,
-				79F2A7C9AF364250CC030129BD0E088C /* Pods-KTCarousel_Example-umbrella.h */,
-				98C178A8188C6E193F1DE9703EB5C77A /* Pods-KTCarousel_Example.debug.xcconfig */,
-				B9F38AAEDD93A7B9AC41DC63C070349E /* Pods-KTCarousel_Example.release.xcconfig */,
+				C6F7442A6565EE9B0DE1FFB0DFDA500F /* Pods-KTCarousel_Example.modulemap */,
+				D5FE266224660241A7C068D6A608FE7E /* Pods-KTCarousel_Example-acknowledgements.markdown */,
+				1F5341803F81EC10C03645B0069EA7C7 /* Pods-KTCarousel_Example-acknowledgements.plist */,
+				8C15650E84EBBDD83CEC54C5C1940944 /* Pods-KTCarousel_Example-dummy.m */,
+				9B89C16473AEC8BA2F97B465DF033122 /* Pods-KTCarousel_Example-frameworks.sh */,
+				05429AF119022EE4BDF1702B8871EE34 /* Pods-KTCarousel_Example-Info.plist */,
+				3139CF24E9991B42018FC262C683EB7D /* Pods-KTCarousel_Example-umbrella.h */,
+				E58A43C702BD8A20DEFEB1C1F760B6B4 /* Pods-KTCarousel_Example.debug.xcconfig */,
+				9EE85205983ABC9DB7615343C0B362C9 /* Pods-KTCarousel_Example.release.xcconfig */,
 			);
 			name = "Pods-KTCarousel_Example";
 			path = "Target Support Files/Pods-KTCarousel_Example";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		56C1AFB524ACC9D8B395F9F36581F2E5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				B8A2187E952B2927213C623C29C1B50A /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9033C5C28EE456474E32887A9613F2D4 /* Products */,
-				639AA09DC3719D80A3410B1474223D5F /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		9033C5C28EE456474E32887A9613F2D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BDB480F2E9C8E9B8914A2C8F6536A2D1 /* KTCarousel.framework */,
-				F0077CA5E5F593823AFED35807BB8AA3 /* Pods_KTCarousel_Example.framework */,
-				EAA010F8622870DE32DDC0A3F636BD33 /* Pods_KTCarousel_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		95EFE76CEF1629FF8F7AF4E53C1E36FE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9FBD668CEED5269F2A744D502EB2E86F /* KTCarousel.podspec */,
-				53318E837230A14C2D0F0F74C76C364D /* LICENSE */,
-				FCAB525907C998BF8C738F45BACFAED9 /* README.md */,
+				5361C7379FA7AD739ACE04A293617122 /* KTCarousel.podspec */,
+				61A558A9F551E766A6C26602FF4BAECE /* LICENSE */,
+				5CDF734F44C3EB29BB4487D391375943 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		B60092B32BF71A4D330D7B63E43FA2A6 /* KTCarousel */ = {
+		699A7B418156287EA56228C7443DCA63 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				90FB07E110AB941ABC45DAFF147D6595 /* KTCarouselProtocols.swift */,
-				58CBC17021AEF91467E5E495D4343EFC /* KTCarouselTransitionController.swift */,
-				98E837C63B998109E84EEC85837ECB29 /* KTHorizontalPagedFlowLayout.swift */,
-				223944CC389BE9116EEC034DC7DD7323 /* KTPresentationController.swift */,
-				D0F7BCB67ADA7322EE1EF39A84D40BC9 /* KTZoomableCollectionViewCell.swift */,
-				5ADF9F703715A953335041AEED4390A2 /* UIImage+ImageFrame.swift */,
-				95EFE76CEF1629FF8F7AF4E53C1E36FE /* Pod */,
-				FD62ED69A6EA92643C7693C5483CC50C /* Support Files */,
+				10659FCB5865A24BA969016D86D99CE4 /* Pods-KTCarousel_Example */,
+				C35687062C9B605DB750B10A6E0957A8 /* Pods-KTCarousel_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A5DBBD70CEC36CAD0B77125B7C210B95 /* KTCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				E21F063A12B0591EE3D24DB5202887A4 /* KTCarouselProtocols.swift */,
+				98788E1348760EC8CF672EF4F0899118 /* KTCarouselTransitionController.swift */,
+				FD364020E092E40A20389FEE1F6B5031 /* KTHorizontalPagedFlowLayout.swift */,
+				B01182147CC3BB264AF543925C2AC45D /* KTPresentationController.swift */,
+				71CC371F06EAFD6965E70467B6612ACA /* KTZoomableCollectionViewCell.swift */,
+				75DBD7C2A4BB2E6DDDF84092D2DDE645 /* UIImage+ImageFrame.swift */,
+				56C1AFB524ACC9D8B395F9F36581F2E5 /* Pod */,
+				ECCEED8B7FFCD0C41D5FFF64F8975B58 /* Support Files */,
 			);
 			name = KTCarousel;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		B8A2187E952B2927213C623C29C1B50A /* Development Pods */ = {
+		C35687062C9B605DB750B10A6E0957A8 /* Pods-KTCarousel_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B60092B32BF71A4D330D7B63E43FA2A6 /* KTCarousel */,
+				4F0F64E8596985613BB7326C04042D26 /* Pods-KTCarousel_Tests.modulemap */,
+				EEF4C53F177E058A950DBA067C5DE3A9 /* Pods-KTCarousel_Tests-acknowledgements.markdown */,
+				11FC891704BC092241018F346CBB3BA9 /* Pods-KTCarousel_Tests-acknowledgements.plist */,
+				7A32F2D23F1484EE3A413AC9CC549318 /* Pods-KTCarousel_Tests-dummy.m */,
+				4AEAD40E28219CA4B977886AC5E37A2E /* Pods-KTCarousel_Tests-Info.plist */,
+				AF0877FF10E808B77F478F95775C5508 /* Pods-KTCarousel_Tests-umbrella.h */,
+				90E4D97FD51C2A6846738F4F121DE2A1 /* Pods-KTCarousel_Tests.debug.xcconfig */,
+				1B39EEDF6A6DD71D4B70DCBEE4258DB4 /* Pods-KTCarousel_Tests.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Pods-KTCarousel_Tests";
+			path = "Target Support Files/Pods-KTCarousel_Tests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E5D445BF68193A88C586F586A3317DC6 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F9B548E15E99CDF570B86A87DBB7476C /* Products */,
+				699A7B418156287EA56228C7443DCA63 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD62ED69A6EA92643C7693C5483CC50C /* Support Files */ = {
+		E5D445BF68193A88C586F586A3317DC6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				36AC51203CA09A36FBCBCEC7C9A76E6D /* Info.plist */,
-				B0D4A78BB272DD8B152F72AB9407D786 /* KTCarousel.modulemap */,
-				71D2E74005E9B2AB4E74F29186667707 /* KTCarousel.xcconfig */,
-				F03FD6267AACD463A20DEE1A8BCE835A /* KTCarousel-dummy.m */,
-				B9B3544C8299F2FD8081C26C11C36033 /* KTCarousel-prefix.pch */,
-				1599C73E2201C38F89B2742A69A021F6 /* KTCarousel-umbrella.h */,
+				A5DBBD70CEC36CAD0B77125B7C210B95 /* KTCarousel */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		ECCEED8B7FFCD0C41D5FFF64F8975B58 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				727DD946E843C612AF6765ABA78E6A4A /* KTCarousel.modulemap */,
+				632A1AF862DE409CBDBA8FF6A1CF787C /* KTCarousel.xcconfig */,
+				AD357E1D7F8CD70BEAB71D53948DAA0F /* KTCarousel-dummy.m */,
+				D9F97C997502EEA0F4696CB2A4E68F72 /* KTCarousel-Info.plist */,
+				02C2D5A2DD366F974E791D95F5924868 /* KTCarousel-prefix.pch */,
+				D0E92A7B38CF73EF132B42D0D1B33271 /* KTCarousel-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/KTCarousel";
 			sourceTree = "<group>";
 		};
+		F9B548E15E99CDF570B86A87DBB7476C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3E7F8ADA3874B2203DCA96FEAA2AC10 /* KTCarousel.framework */,
+				80CF2B82FF41A85524A559905A2F391F /* Pods_KTCarousel_Example.framework */,
+				637D0FC7DE3C21E82E392B725FC9D8E6 /* Pods_KTCarousel_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0F99F43A795D6BFD4B164E3606D35B46 /* Headers */ = {
+		AE5A43A053340DFA3E8EA48912BB6FE6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8668BCEA9CEFB84042B50BCAF47352FF /* Pods-KTCarousel_Example-umbrella.h in Headers */,
+				235F1E989577AFFBC5A9784FACE7FA70 /* KTCarousel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDD231605F39486DC9DB972B3AA912C7 /* Headers */ = {
+		B8828020FD6648AD80E12EF6D1ED6E5A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				749CB65927D5A494CE68F2C34068D148 /* Pods-KTCarousel_Tests-umbrella.h in Headers */,
+				2E9E77FD4AC432D0803EE2A9D2A7CDBC /* Pods-KTCarousel_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAA24BF0615C83AA483DC3A104766509 /* Headers */ = {
+		BEBC0A50556849B3598AA6131497762D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CCE1CFBB5FCCF526DC110F52368CE8F /* KTCarousel-umbrella.h in Headers */,
+				679ADA185CBDBB74D07DC5F8301AEE3E /* Pods-KTCarousel_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4977E153D712E69918FF2B3CEAB3C2F7 /* Pods-KTCarousel_Tests */ = {
+		286E73DF621E369AD93E8B2B8AEE52A1 /* Pods-KTCarousel_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5EBFEB9E2DEAC4C101771A36C45288B /* Build configuration list for PBXNativeTarget "Pods-KTCarousel_Tests" */;
+			buildConfigurationList = 12F65C7710D6A73D664463622BA461DA /* Build configuration list for PBXNativeTarget "Pods-KTCarousel_Tests" */;
 			buildPhases = (
-				EDD231605F39486DC9DB972B3AA912C7 /* Headers */,
-				BBB1C722A760C837EE7FE76722BFD61D /* Sources */,
-				80D462993F08BFB4E6C6D01FA883BAC4 /* Frameworks */,
-				73BFABC3DC533C606FA714F7D4DF081A /* Resources */,
+				BEBC0A50556849B3598AA6131497762D /* Headers */,
+				4D57ECF8469AEE3226F5C55FDC4CE21C /* Sources */,
+				4F7E207DFFCB6F34539EB2D31BE47A65 /* Frameworks */,
+				65527D268CC9BFE1216848E75E26B9DA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BF819785E7065D02C279EA65F8DE3F54 /* PBXTargetDependency */,
+				372BDAE248489B5F66A678987011378D /* PBXTargetDependency */,
 			);
 			name = "Pods-KTCarousel_Tests";
 			productName = "Pods-KTCarousel_Tests";
-			productReference = EAA010F8622870DE32DDC0A3F636BD33 /* Pods_KTCarousel_Tests.framework */;
+			productReference = 637D0FC7DE3C21E82E392B725FC9D8E6 /* Pods_KTCarousel_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C8EA218644B8DF59BC5A066EB1871FDB /* KTCarousel */ = {
+		80E2DF51E424F4DCE8BEBECC8E32BFA9 /* Pods-KTCarousel_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D49098BEC87E3FEC3F4D6F62AED1FB1 /* Build configuration list for PBXNativeTarget "KTCarousel" */;
+			buildConfigurationList = 7A8D55651D12E2532AE668822B94E8FE /* Build configuration list for PBXNativeTarget "Pods-KTCarousel_Example" */;
 			buildPhases = (
-				FAA24BF0615C83AA483DC3A104766509 /* Headers */,
-				7EEB6CDB49BC1DA215E9B0D4EC0A94DB /* Sources */,
-				A3F249B180D1B72002B2F57F3D36E1CB /* Frameworks */,
-				1B62FF37ED82C2A559BA5DD2740D88F9 /* Resources */,
+				B8828020FD6648AD80E12EF6D1ED6E5A /* Headers */,
+				69D02EA735A71C6171A50E0896AD2F61 /* Sources */,
+				9ECC07B671B4F072A1D598D7F0ADF9A0 /* Frameworks */,
+				4D2AC18316B4E50395FAE7C4CE034CCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6C4C12E5141D9F1FEA419306179E6C2 /* PBXTargetDependency */,
+			);
+			name = "Pods-KTCarousel_Example";
+			productName = "Pods-KTCarousel_Example";
+			productReference = 80CF2B82FF41A85524A559905A2F391F /* Pods_KTCarousel_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0917777912FF8853855C1F12B84E619 /* KTCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A8047906A482CC880B2A7F1B3CD28A5 /* Build configuration list for PBXNativeTarget "KTCarousel" */;
+			buildPhases = (
+				AE5A43A053340DFA3E8EA48912BB6FE6 /* Headers */,
+				C6462F120379BB06E2B97E1F08A10E0E /* Sources */,
+				C838FC2E34EB11E58872201167CC9446 /* Frameworks */,
+				08F406E351ABE05D28AD37A594022A43 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -306,72 +319,53 @@
 			);
 			name = KTCarousel;
 			productName = KTCarousel;
-			productReference = BDB480F2E9C8E9B8914A2C8F6536A2D1 /* KTCarousel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C8F8757B3359B2217B0B85A2E3959F64 /* Pods-KTCarousel_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A67474277B106DD6484A456B37707E18 /* Build configuration list for PBXNativeTarget "Pods-KTCarousel_Example" */;
-			buildPhases = (
-				0F99F43A795D6BFD4B164E3606D35B46 /* Headers */,
-				EC41B1B1A1CD9BA0A2A07204B514055A /* Sources */,
-				D69250F197ACAE647578AE046BB63002 /* Frameworks */,
-				3F91A8BCC667BD0B3088CB6171588CE1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46C6C4E82FD69C2671E0B2A43955DE86 /* PBXTargetDependency */,
-			);
-			name = "Pods-KTCarousel_Example";
-			productName = "Pods-KTCarousel_Example";
-			productReference = F0077CA5E5F593823AFED35807BB8AA3 /* Pods_KTCarousel_Example.framework */;
+			productReference = E3E7F8ADA3874B2203DCA96FEAA2AC10 /* KTCarousel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9033C5C28EE456474E32887A9613F2D4 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F9B548E15E99CDF570B86A87DBB7476C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C8EA218644B8DF59BC5A066EB1871FDB /* KTCarousel */,
-				C8F8757B3359B2217B0B85A2E3959F64 /* Pods-KTCarousel_Example */,
-				4977E153D712E69918FF2B3CEAB3C2F7 /* Pods-KTCarousel_Tests */,
+				A0917777912FF8853855C1F12B84E619 /* KTCarousel */,
+				80E2DF51E424F4DCE8BEBECC8E32BFA9 /* Pods-KTCarousel_Example */,
+				286E73DF621E369AD93E8B2B8AEE52A1 /* Pods-KTCarousel_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1B62FF37ED82C2A559BA5DD2740D88F9 /* Resources */ = {
+		08F406E351ABE05D28AD37A594022A43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F91A8BCC667BD0B3088CB6171588CE1 /* Resources */ = {
+		4D2AC18316B4E50395FAE7C4CE034CCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73BFABC3DC533C606FA714F7D4DF081A /* Resources */ = {
+		65527D268CC9BFE1216848E75E26B9DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,93 +375,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7EEB6CDB49BC1DA215E9B0D4EC0A94DB /* Sources */ = {
+		4D57ECF8469AEE3226F5C55FDC4CE21C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953EACA77D46D626CB04E5B8777CD72F /* KTCarousel-dummy.m in Sources */,
-				AC08C3A65CC050D0C41EF1296202728C /* KTCarouselProtocols.swift in Sources */,
-				4771A71864FD83849DA83B5D6B7D2D21 /* KTCarouselTransitionController.swift in Sources */,
-				E50B602F5A2E22AA78C443ADCE29A6FE /* KTHorizontalPagedFlowLayout.swift in Sources */,
-				E457A8E838AC61107C68F70DC055CFF9 /* KTPresentationController.swift in Sources */,
-				68611D4D830018D7BFFDAD318CC74207 /* KTZoomableCollectionViewCell.swift in Sources */,
-				16271926579AEFBC539E1593C4425B4A /* UIImage+ImageFrame.swift in Sources */,
+				ABA10E284BF619147363C1AFC1EF2CFC /* Pods-KTCarousel_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBB1C722A760C837EE7FE76722BFD61D /* Sources */ = {
+		69D02EA735A71C6171A50E0896AD2F61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F02906B65604F207F05AA18C0F3398D /* Pods-KTCarousel_Tests-dummy.m in Sources */,
+				3A45C0C9A79CA6D291181ADDD778A837 /* Pods-KTCarousel_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC41B1B1A1CD9BA0A2A07204B514055A /* Sources */ = {
+		C6462F120379BB06E2B97E1F08A10E0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83820FA5A1315EA05A3859457E6FB1B8 /* Pods-KTCarousel_Example-dummy.m in Sources */,
+				83644E24B8F21660CD681E716091223C /* KTCarousel-dummy.m in Sources */,
+				BC192016A42B928F5EE138FC60CA5012 /* KTCarouselProtocols.swift in Sources */,
+				C422EF365859C8C71810F9616A4F52F8 /* KTCarouselTransitionController.swift in Sources */,
+				8CF815006AE917847A41206342CEF212 /* KTHorizontalPagedFlowLayout.swift in Sources */,
+				0CC35FF3A0CD61952B2C406FAE88092F /* KTPresentationController.swift in Sources */,
+				047E8A2270982746A3EE69900EAEAA3D /* KTZoomableCollectionViewCell.swift in Sources */,
+				126A2F3077EA119047E4BF353A231B04 /* UIImage+ImageFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46C6C4E82FD69C2671E0B2A43955DE86 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KTCarousel;
-			target = C8EA218644B8DF59BC5A066EB1871FDB /* KTCarousel */;
-			targetProxy = 8DBF8FA5B830D2C8B8B4A55435E89A69 /* PBXContainerItemProxy */;
-		};
-		BF819785E7065D02C279EA65F8DE3F54 /* PBXTargetDependency */ = {
+		372BDAE248489B5F66A678987011378D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-KTCarousel_Example";
-			target = C8F8757B3359B2217B0B85A2E3959F64 /* Pods-KTCarousel_Example */;
-			targetProxy = 8731B237FB50C8B9E4B88E2621615302 /* PBXContainerItemProxy */;
+			target = 80E2DF51E424F4DCE8BEBECC8E32BFA9 /* Pods-KTCarousel_Example */;
+			targetProxy = FD79626A90A0D5E65B21B87C523F5075 /* PBXContainerItemProxy */;
+		};
+		A6C4C12E5141D9F1FEA419306179E6C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KTCarousel;
+			target = A0917777912FF8853855C1F12B84E619 /* KTCarousel */;
+			targetProxy = F72DEC5C33ED698AC696F8718F2E70C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1D92E9E5423F43BCA695D3E63B9730EB /* Debug */ = {
+		1CE4B1DD03B69AD6C5E0B4FDDED8DC43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98C178A8188C6E193F1DE9703EB5C77A /* Pods-KTCarousel_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KTCarousel_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KTCarousel_Example/Pods-KTCarousel_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		23724D5BB0BED95D141EAE7E2419AB4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71D2E74005E9B2AB4E74F29186667707 /* KTCarousel.xcconfig */;
+			baseConfigurationReference = 632A1AF862DE409CBDBA8FF6A1CF787C /* KTCarousel.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -480,7 +438,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/KTCarousel/KTCarousel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KTCarousel/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/KTCarousel/KTCarousel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -490,40 +448,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		350A1CCC8422571DAC0C059C13879510 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71D2E74005E9B2AB4E74F29186667707 /* KTCarousel.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KTCarousel/KTCarousel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KTCarousel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KTCarousel/KTCarousel.modulemap";
-				PRODUCT_MODULE_NAME = KTCarousel;
-				PRODUCT_NAME = KTCarousel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -532,112 +456,7 @@
 			};
 			name = Release;
 		};
-		58884650C40A287312CAA16138CF637D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9F38AAEDD93A7B9AC41DC63C070349E /* Pods-KTCarousel_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KTCarousel_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KTCarousel_Example/Pods-KTCarousel_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7BFE01EE54855D3F92B4B4B29F4E23E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5364BBB494536A8B8AED7C07135069CF /* Pods-KTCarousel_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KTCarousel_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KTCarousel_Tests/Pods-KTCarousel_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B9A56763DD287E7D36EC2C5E3286485D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BA316D0685A2D87D467D4ADA857CC88 /* Pods-KTCarousel_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KTCarousel_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KTCarousel_Tests/Pods-KTCarousel_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C92782E717C52E3633C9A5F211E7987A /* Debug */ = {
+		3048B0C5C704DFFF688DA57F5380ED58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -669,8 +488,100 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		323C5FE620318FF6E3E7F68A124258CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E4D97FD51C2A6846738F4F121DE2A1 /* Pods-KTCarousel_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KTCarousel_Tests/Pods-KTCarousel_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KTCarousel_Tests/Pods-KTCarousel_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B0C8287D755FD95091CF35D87FB8B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -697,110 +608,188 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		EA8C7AF90938697605468604B2A17B9F /* Release */ = {
+		A1EA82783A453FEF185E3ED0197882CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E58A43C702BD8A20DEFEB1C1F760B6B4 /* Pods-KTCarousel_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KTCarousel_Example/Pods-KTCarousel_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "${SRCROOT}/../build";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KTCarousel_Example/Pods-KTCarousel_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5B289640A4E88A49808B5AB04ADC332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632A1AF862DE409CBDBA8FF6A1CF787C /* KTCarousel.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KTCarousel/KTCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KTCarousel/KTCarousel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KTCarousel/KTCarousel.modulemap";
+				PRODUCT_MODULE_NAME = KTCarousel;
+				PRODUCT_NAME = KTCarousel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DDC77CD0B5668E4604980872C9472F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE85205983ABC9DB7615343C0B362C9 /* Pods-KTCarousel_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KTCarousel_Example/Pods-KTCarousel_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KTCarousel_Example/Pods-KTCarousel_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE3CF1334B1A3F32A5BD6EA614BEF05A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B39EEDF6A6DD71D4B70DCBEE4258DB4 /* Pods-KTCarousel_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KTCarousel_Tests/Pods-KTCarousel_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KTCarousel_Tests/Pods-KTCarousel_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D49098BEC87E3FEC3F4D6F62AED1FB1 /* Build configuration list for PBXNativeTarget "KTCarousel" */ = {
+		12F65C7710D6A73D664463622BA461DA /* Build configuration list for PBXNativeTarget "Pods-KTCarousel_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23724D5BB0BED95D141EAE7E2419AB4B /* Debug */,
-				350A1CCC8422571DAC0C059C13879510 /* Release */,
+				323C5FE620318FF6E3E7F68A124258CB /* Debug */,
+				DE3CF1334B1A3F32A5BD6EA614BEF05A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		1A8047906A482CC880B2A7F1B3CD28A5 /* Build configuration list for PBXNativeTarget "KTCarousel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C92782E717C52E3633C9A5F211E7987A /* Debug */,
-				EA8C7AF90938697605468604B2A17B9F /* Release */,
+				D5B289640A4E88A49808B5AB04ADC332 /* Debug */,
+				1CE4B1DD03B69AD6C5E0B4FDDED8DC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A67474277B106DD6484A456B37707E18 /* Build configuration list for PBXNativeTarget "Pods-KTCarousel_Example" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D92E9E5423F43BCA695D3E63B9730EB /* Debug */,
-				58884650C40A287312CAA16138CF637D /* Release */,
+				5B0C8287D755FD95091CF35D87FB8B2D /* Debug */,
+				3048B0C5C704DFFF688DA57F5380ED58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5EBFEB9E2DEAC4C101771A36C45288B /* Build configuration list for PBXNativeTarget "Pods-KTCarousel_Tests" */ = {
+		7A8D55651D12E2532AE668822B94E8FE /* Build configuration list for PBXNativeTarget "Pods-KTCarousel_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9A56763DD287E7D36EC2C5E3286485D /* Debug */,
-				7BFE01EE54855D3F92B4B4B29F4E23E8 /* Release */,
+				A1EA82783A453FEF185E3ED0197882CC /* Debug */,
+				DDC77CD0B5668E4604980872C9472F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
